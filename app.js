@@ -17,6 +17,10 @@ app.get('/', (req, res) => {
   })
 })
 
+app.get('/counselling', (req, res) => {
+  res.render('index')
+})
+
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)
 })
