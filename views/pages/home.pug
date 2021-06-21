@@ -4,4 +4,17 @@ block variables
   - var template = 'home'
 
 block content 
-  h1.home__title Home
+  .home
+    .home__wrapper
+      section.home__hero
+        .home__hero__wrapper
+          h1.home__hero__title=home.data.title
+          figure.home__hero__image
+            img(alt=home.data.image.alt src=home.data.image.url)
+
+          each section in home.data.body
+            if section.slice_type == 'header'      
+              h1.home__title=section.primary.content_title
+              p.home__content!=PrismicDOM.RichText.asHtml(section.primary.content_text)
+              figure.home__content__media
+                img.home__content__media__image(alt=section.primary.content_image.alt src=section.primary.content_image.url)

@@ -28,23 +28,20 @@ app.set('views', path.join(__dirname, 'views'))
 app.set('view engine', 'pug')
 
 // routes
-app.get('/', async (req, res) => {
-  initApi(req).then(api => {
-    api.query(
-      Prismic.Predicates.any('document.type', ['meta', 'header'])) 
-      .then(response => {
-      const { results } = response
-      const [meta, header] = results
+app.get('/', async (req, res) => { 
+  const api = await initApi(req)
+  const home = await api.getSingle('home')
+  const meta = await api.getSingle('meta')
 
-      console.log(meta, header)
+  console.log(home.data)
 
-      res.render('pages/home', {
-        header,
-        meta
-      })
-    })
+  res.render('pages/home', {
+    home,
+    meta
   })
 })
+
+
 
 app.get('/counselling', async (req, res) => {
   res.render('pages/counselling')
