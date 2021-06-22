@@ -1,0 +1,34 @@
+
+.home {
+
+}
+.home__wrapper {
+
+}
+
+.home__hero {
+
+}
+
+
+.home__hero__wrapper{
+  display: flex;
+}
+
+.home__hero__title {
+  @extend %title-40;
+
+
+
+  margin-left: 8rem;
+
+  align-self: center;
+}
+.home__hero__image {
+
+}
+
+
+
+
+

@@ -1,0 +1,26 @@
+//- INTRO
+
+.intro {
+
+}
+.intro__wrapper {
+  display: flex;
+}
+.intro__title {
+  @extend %title-40;
+
+}
+
+.intro__text__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.intro__text {
+}
+.intro__media {
+
+}
+.intro__media__image {
+
+}

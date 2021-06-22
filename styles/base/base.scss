@@ -1,0 +1,11 @@
+html {
+  font-size: calc(100vw / 1440 * 10);
+}
+
+body {
+  @extend %text-24;
+
+  font-family: $font-brandon;
+
+  
+}
