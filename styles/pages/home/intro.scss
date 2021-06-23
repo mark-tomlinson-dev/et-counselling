@@ -1,23 +1,31 @@
 //- INTRO
-
 .intro {
 
 }
 .intro__wrapper {
   display: flex;
+  gap: 16rem;
 }
 .intro__title {
   @extend %title-40;
+  font-weight: 600;
 
 }
 
 .intro__text__wrapper {
   display: flex;
   flex-direction: column;
+
+  margin-left: 8rem;
+  align-self: center;
+
+  p {
+    line-height: 150%;
+    margin-top: 3rem;
+  }
 }
 
-.intro__text {
-}
+
 .intro__media {
 
 }

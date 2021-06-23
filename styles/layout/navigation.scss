@@ -1,12 +1,16 @@
 .header {
-
+  padding: clamp(4rem,1rem + .47vw,1.33rem) 0;
 }
 .header__wrapper {
-
+  width: 90vw;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
 }
 
 .header__inner {
-
+  display: flex;
+  justify-content: flex-end;
 }
 
 .header__navigation {
@@ -17,14 +21,28 @@
 }
 
 .navigation__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0 clamp(4rem,1rem + .47vw,1.33rem);
+  margin: 0;
 
 }
 
 .navigation__list__item {
 
+&:last-child {
+  margin-right: 6rem;
+}
+
 }
 
 .navigation__list__link {
+  @extend %title-18;
+
+  color: $color-white;
+
+
 
 }
 

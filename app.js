@@ -61,7 +61,7 @@ app.get('/', async (req, res) => {
   const home = await api.getSingle('home')
   const meta = await api.getSingle('meta')
 
-  console.log(home.data.body)
+  console.log(home)
  
 
 

@@ -8,10 +8,14 @@ block content
     .home__wrapper
       section.home__hero
         .home__hero__wrapper
-          //- h3.home__hero__name Elizabeth Tomlinson
-          h1.home__hero__title=home.data.title
+          .home__hero__text
+            h3.home__hero__logo=home.data.logo
+            h1.home__hero__title=home.data.title
+            .home__hero__button
+              a.home__hero__button__link=home.data.button
           figure.home__hero__image
             img(alt=home.data.image.alt src=home.data.image.url)
+          
 
       each section in home.data.body
 
