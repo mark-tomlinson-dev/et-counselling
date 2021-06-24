@@ -31,19 +31,19 @@
 
 
 .home__hero__logo {
-  @extend %text-24;
+  @extend %text-18;
 
   color: $color-grey;
-  font-weight: 400;
+  font-weight: 300;
   padding-left: 5.5rem;
 
 
     &:after {
     content: "";
     position: absolute;
-    top: 1.2rem;
+    top: 0.8rem;
     left: 0;
-    height: 0.05rem;
+    height: 1px;
     width: 5rem;
     background-color: $color-grey;
   }
