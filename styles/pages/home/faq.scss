@@ -1,10 +1,11 @@
 //- FAQ
 
 .faq {
+  background-color: $color-blue-grey;
 
 }
 .faq__wrapper {
-  max-width: 1300px;
+  max-width: 900px;
   margin: 0 auto;
   gap: 8rem;
   min-height: 100vh;
@@ -13,13 +14,15 @@
 }
 .faq__title {
   @extend %title-40;
-  margin-bottom: 2rem;
+  padding-top: 4rem;
+  margin-bottom: 6rem;
 }
 .faq__question {
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   padding-bottom: 2rem;
   @extend %text-24;
-  border-bottom: solid 1px $color-grey;
+  border-bottom: solid 1px $color-black;
+  cursor: pointer;
 }
 .faq__answer {
   @extend %text-18;
