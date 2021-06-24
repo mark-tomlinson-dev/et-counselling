@@ -1,14 +1,22 @@
 //- INTRO
 .intro {
+  background-color: $color-light-grey;
 
 }
+
+
+
 .intro__wrapper {
+  max-width: 1300px;
+  margin: 0 auto;
   display: flex;
-  gap: 16rem;
+  gap: 8rem;
+  min-height: 100vh;
+  padding: 4rem;
+
 }
 .intro__title {
-  @extend %title-40;
-  font-weight: 600;
+  @extend %title-36;
 
 }
 
@@ -16,12 +24,17 @@
   display: flex;
   flex-direction: column;
 
-  margin-left: 8rem;
+  margin-top: -20rem;
   align-self: center;
 
+  h1 {
+
+  }
+
   p {
+    @extend %text-18;
     line-height: 150%;
-    margin-top: 3rem;
+    margin-top: 1.5rem;
   }
 }
 
