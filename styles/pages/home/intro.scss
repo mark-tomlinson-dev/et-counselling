@@ -1,6 +1,6 @@
 //- INTRO
 .intro {
-  background-color: $color-light-grey;
+  // background-color: $color-light-grey;
 
 }
 
@@ -24,7 +24,6 @@
   display: flex;
   flex-direction: column;
 
-  margin-top: -20rem;
   align-self: center;
 
   h1 {
@@ -40,6 +39,8 @@
 
 
 .intro__media {
+
+
 
 }
 .intro__media__image {

@@ -4,14 +4,25 @@
 
 }
 .faq__wrapper {
+  max-width: 1300px;
+  margin: 0 auto;
+  gap: 8rem;
+  min-height: 100vh;
+  padding: 4rem;
 
 }
 .faq__title {
   @extend %title-40;
+  margin-bottom: 2rem;
 }
 .faq__question {
-
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  @extend %text-24;
+  border-bottom: solid 1px $color-grey;
 }
 .faq__answer {
-  
+  @extend %text-18;
+  margin-bottom: 2rem;
+  display: none;
 }
