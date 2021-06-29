@@ -1,40 +1,48 @@
 //- INTRO
 .intro {
   // background-color: $color-light-grey;
-
+  // &:first-of-type & {
+  //   background-color: #F7BE94;
+  // }
+  
+  margin-top: 15rem;
 }
 
 
 
 .intro__wrapper {
-  max-width: 1300px;
-  margin: 0 auto;
+  margin-left: 40rem;
+  position: relative;
   display: flex;
   gap: 8rem;
-  min-height: 90vh;
 
 }
-.intro__title {
-  @extend %title-36;
 
-}
 
 .intro__text__wrapper {
   display: flex;
   flex-direction: column;
-
-  margin-top: -20rem;
   align-self: center;
 
-  h1 {
-
-  }
-
   p {
-    @extend %text-18;
-    line-height: 150%;
-    margin-top: 1.5rem;
+    @extend %text-20;
+    line-height: 3rem;
+    margin-top: 2.8rem;
+
   }
+}
+
+.intro__title {
+  @extend %title-40;
+  margin-bottom: -1.6rem;
+}
+
+
+.intro__text {
+ 
+
+
+
 }
 
 
@@ -45,5 +53,8 @@
 }
 .intro__media__image {
 
-
+  &:first-child {
+    width: 60rem;
+  }
+  
 }

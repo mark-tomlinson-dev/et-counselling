@@ -1,24 +1,23 @@
 
 .home {
-
+ 
 }
 .home__wrapper {
 
-  
+
+
+ 
 }
 
 .home__hero {
-
 }
 
 
 .home__hero__wrapper{
-  max-width: 1300px;
-  margin: 0 auto;
+  margin-left: 12.2rem;
+  position: relative;
   display: flex;
-  gap: 3rem;
-  min-height: 100vh;
-  overflow-x: hidden;
+  gap: 4.6rem;
 }
 
 .home__hero__text {
@@ -26,38 +25,15 @@
   align-self: center;
   flex-direction: column;
   position: relative;
-  width: 66%;
 }
 
 
-.home__hero__logo {
-  @extend %text-18;
-
-  color: $color-grey;
-  font-weight: 300;
-  padding-left: 5.5rem;
-
-
-    &:after {
-    content: "";
-    position: absolute;
-    top: 0.8rem;
-    left: 0;
-    height: 1px;
-    width: 5rem;
-    background-color: $color-grey;
-  }
-
-
-}
 
 .home__hero__title {
-  @extend %title-36;
-
-
+  @extend %title-40;
+  line-height: 5rem;
   letter-spacing: -0.25%;
-  margin-bottom: 5rem;
-  line-height: 1.25;
+  margin-bottom: 3rem; 
 }
 
 .home__hero__button {
@@ -67,26 +43,22 @@
 
 .home__hero__button__link {
   @extend %title-14;
-
   border: 2px solid $color-black;
   border-radius: 2px;
-
   text-transform: uppercase;
-  
- 
   background-color: $color-black;
   color: $color-white;
-
-  padding: 1.3rem 3rem;
+  padding: 1rem 2.4rem;
+  cursor: pointer;
 }
 
 
 
 
 .home__hero__image {
-  width: 33%;
-  align-self: center;
-  object-fit: cover;
+  margin-top: -6rem;
+  z-index: -99;
+  width: 100rem;
 
 }
 
