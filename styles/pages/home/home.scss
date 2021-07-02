@@ -1,48 +1,19 @@
-
-.home {
- 
-}
-.home__wrapper {
-
-
-
- 
-}
-
-.home__hero {
-}
-
-
 .home__hero__wrapper{
-  margin-left: 12.2rem;
-  position: relative;
-  display: flex;
-  gap: 4.6rem;
+  max-width: 122rem;
+  margin: 0 auto;  
 }
-
-.home__hero__text {
-  display: flex;
-  align-self: center;
-  flex-direction: column;
-  position: relative;
-}
-
-
 
 .home__hero__title {
-  @extend %title-40;
-  line-height: 5rem;
+  margin-top: 12rem;
+  max-width: 100rem;
+  @extend %title-74;
+  line-height: 8rem;
   letter-spacing: -0.25%;
-  margin-bottom: 3rem; 
-}
-
-.home__hero__button {
-  
-  
 }
 
 .home__hero__button__link {
   @extend %title-14;
+  display: inline-block;
   border: 2px solid $color-black;
   border-radius: 2px;
   text-transform: uppercase;
@@ -50,17 +21,9 @@
   color: $color-white;
   padding: 1rem 2.4rem;
   cursor: pointer;
+  margin-top: 4rem;
 }
 
-
-
-
-.home__hero__image {
-  margin-top: -6rem;
-  z-index: -99;
-  width: 100rem;
-
-}
 
 
 

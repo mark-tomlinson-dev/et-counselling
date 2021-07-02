@@ -61,7 +61,19 @@ app.get('/', async (req, res) => {
   const home = await api.getSingle('home')
   const meta = await api.getSingle('meta')
 
-  console.log(home)
+  // console.log(home.data.body)
+
+  // let headers = data.filter(section => section.slice_type == "header")
+  // console.log(headers)
+
+  let sections = []
+
+  for (let section of home.data.body) {
+    sections.push(section)
+    console.log(sections[0].items[0].title)
+  }
+
+
  
 
 

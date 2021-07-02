@@ -1,7 +1,5 @@
-html {
-  @extend %cover;
-  
-  font-size: calc(100vw / 1440 * 10);
+html {  
+  font-size: calc(100vw / 1920 * 10);
 
   @include media('<tablet') {
     font-size: calc(100vw / 1024 * 10);
@@ -13,7 +11,6 @@ html {
 }
 
 body {
-
   font-family: $font-brandon;
   background-color: $color-white;
 

@@ -9,24 +9,21 @@ block content
       section.home__hero
         .home__hero__wrapper
           .home__hero__text
-            h1.home__hero__title=home.data.title
-            .home__hero__button
-              a.home__hero__button__link=home.data.button
-          figure.home__hero__image
-            img(alt=home.data.image.alt src=home.data.image.url)
+            h1.home__hero__title=home.data.hero_tagline
+            a.home__hero__button__link=home.data.cta_button
           
 
       each section in home.data.body
-
-        //- INTRO
+        //- MAIN CONTENT
         if section.slice_type == 'header'
-          section.intro
-            .intro__wrapper
-              .intro__text__wrapper
-                h1.intro__title=section.primary.content_title 
-                p.intro__text!=PrismicDOM.RichText.asHtml(section.primary.content_text)
-              figure.intro__media
-                img.intro__media__image(alt=section.primary.content_image.alt src=section.primary.content_image.url)
+          each item in section.items  
+            section.intro(class=`${item.type === 'Left' ? 'intro--left' : 'intro--right'}`)
+              .intro__wrapper
+                .intro__text__wrapper
+                    h1.intro__title=item.title
+                    .intro__text!=PrismicDOM.RichText.asHtml(item.content)
+                figure.intro__media
+                  img.intro__media__image(alt=item.image1.alt src=item.image1.url)
 
         //- FAQ
         if section.slice_type == 'faq'
