@@ -66,12 +66,14 @@ app.get('/', async (req, res) => {
   // let headers = data.filter(section => section.slice_type == "header")
   // console.log(headers)
 
-  let sections = []
+  // let sections = []
 
-  for (let section of home.data.body) {
-    sections.push(section)
-    console.log(sections[0].items[0].title)
-  }
+  // for (let section of home.data.body) {
+  //   sections.push(section)
+  //   console.log(sections)
+  // }
+
+  console.log(home.data.body)
 
 
  

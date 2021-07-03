@@ -20,7 +20,7 @@ block content
             section.intro(class=`${item.type === 'Left' ? 'intro--left' : 'intro--right'}`)
               .intro__wrapper
                 .intro__text__wrapper
-                    h1.intro__title=item.title
+                    h2.intro__title=item.title
                     .intro__text!=PrismicDOM.RichText.asHtml(item.content)
                 figure.intro__media
                   img.intro__media__image(alt=item.image1.alt src=item.image1.url)
@@ -31,7 +31,7 @@ block content
         if section.slice_type == 'faq'
           section.faq 
             .faq__wrapper
-              h1.faq__title=section.primary.faq_title
+              h2.faq__title=section.primary.faq_title
               each question in section.items
                 h3.faq__question=question.faq_question
                 p.faq__answer=question.faq_answer
