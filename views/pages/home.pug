@@ -24,6 +24,8 @@ block content
                     .intro__text!=PrismicDOM.RichText.asHtml(item.content)
                 figure.intro__media
                   img.intro__media__image(alt=item.image1.alt src=item.image1.url)
+                .gradient__square 
+                .gradient__ribbon
 
         //- FAQ
         if section.slice_type == 'faq'
