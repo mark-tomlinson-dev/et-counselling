@@ -7,8 +7,11 @@
   .intro--right & {
     flex-direction: row-reverse;
   }
-}
 
+  .intro:nth-child(4) & {
+    margin-bottom: 0;
+  }
+}
 
 .intro__text__wrapper {
   display: flex;
@@ -38,12 +41,6 @@
     @extend %title-60;
   }
 }
-
-
-.intro__text {
- 
-}
-
 
 .intro__media {
   position: relative;
@@ -101,9 +98,6 @@
     top: 47rem;
     left: 35rem;
   }
-
-
-
 }
 
 .gradient__ribbon {

@@ -29,12 +29,13 @@ block content
 
         //- FAQ
         if section.slice_type == 'faq'
-          section.faq 
-            .faq__wrapper
-              h2.faq__title=section.primary.faq_title
-              each question in section.items
-                h3.faq__question=question.faq_question
-                p.faq__answer=question.faq_answer
+            section.faq 
+              .faq__wrapper
+
+                h2.faq__title=section.primary.title
+                each question in section.items
+                  h3.faq__question=question.faq_question
+                  p.faq__answer=question.faq_answer
               
 
 
