@@ -17,7 +17,7 @@ block content
         //- MAIN CONTENT
         if section.slice_type == 'header'
           each item in section.items  
-            section.intro(class=`${item.type === 'Left' ? 'intro--left' : 'intro--right'}`)
+            section.intro(class=`${item.type === 'Left' ? 'intro--left' : 'intro--right'}` id=`${item.type === 'Left' ? 'intro' : 'about'}`)
               .intro__wrapper
                 .intro__text__wrapper
                     h2.intro__title=item.title
@@ -29,8 +29,10 @@ block content
 
         //- FAQ
         if section.slice_type == 'faq'
-            section.faq 
+            section.faq#faq  
               .faq__wrapper
+                .gradient__ribbon
+                .gradient__ribbon
 
                 h2.faq__title=section.primary.title
                 each question in section.items

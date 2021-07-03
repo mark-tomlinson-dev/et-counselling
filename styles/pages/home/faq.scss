@@ -1,8 +1,12 @@
-.faq__wrapper {
-  max-width: 90rem;
+.faq {
+  max-width: 122rem;
   margin: 0 auto;
-  // gap: 8rem;
+}
 
+.faq__wrapper {
+  position: relative;
+  padding-left: 20rem;
+  padding-right: 20rem;
 }
 .faq__title {
   @extend %title-40;
@@ -20,4 +24,25 @@
   @extend %text-18;
   margin-bottom: 2rem;
   display: none;
+}
+
+.gradient__ribbon {
+  height: 9rem;
+  width: 36rem;
+  position: absolute;
+  background: linear-gradient(270deg, rgba(155, 155, 155, 0.32) 0%, rgba(255, 255, 255, 0.1728) 100%);
+  top: 20rem;
+  right: -34.2rem;
+
+  &:nth-of-type(2) {
+    height: 12.5rem;
+    width: 35rem;
+    background: linear-gradient(-270deg, rgba(117, 117, 117, 0.47) 0%, rgba(255, 255, 255, 0) 84.54%);
+    top: 50rem;
+    left: -10rem;
+    position: absolute;
+
+
+  }
+
 }
