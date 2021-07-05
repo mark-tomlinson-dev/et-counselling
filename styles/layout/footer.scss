@@ -1,0 +1,40 @@
+footer {
+  background: $color-black;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.footer__wrapper {
+  max-width: 122rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer_navigation {
+  display: flex;
+  gap: 3rem;
+} 
+
+.footer__navigation__list__link {
+  color: $color-grey;
+  @extend %text-20;
+  transition: 150ms ease;
+
+  &:hover {
+    color: $color-white;
+  }
+
+} 
+
+.footer__copyright {
+  color: $color-grey;
+  @extend %text-20;
+}
+
+.footer__button__back-to-top {
+  color: $color-grey;
+  @extend %text-20;
+} 
+
