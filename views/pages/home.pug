@@ -31,14 +31,27 @@ block content
         if section.slice_type == 'faq'
             section.faq#faq  
               .faq__wrapper
-                .gradient__ribbon
-                .gradient__ribbon
+                .faq__gradient__ribbon
+                .faq__gradient__ribbon
+                .faq__gradient__ribbon
 
                 h2.faq__title=section.primary.title
                 each question in section.items
                   h3.faq__question=question.faq_question
                   p.faq__answer=question.faq_answer
-              
+
+      section.contact#contact
+        .contact__wrapper       
+          h2.contact__title=home.data.contact_title
+          .contact__content
+            p.contact__tagline=home.data.contact_tagline
+            p.contact__phone=home.data.phone 
+            p.contact__email=home.data.email
+          figure.contact__media 
+            img.contact__media__image(src=home.data.contact_image.url) 
+        
+          
+
 
 
     

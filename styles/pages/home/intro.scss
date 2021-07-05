@@ -1,3 +1,8 @@
+#about {
+  scroll-margin-top: 10rem;
+}
+
+
 .intro__wrapper {
   display: flex;
   margin: 10rem auto 15rem;
@@ -7,12 +12,16 @@
   
   .intro--right & {
     flex-direction: row-reverse;
-  
   }
 
   .intro:nth-child(4) & {
     margin-bottom: 0;
   }
+
+  .intro:nth-child(6) & {
+ 
+  }
+
 }
 
 .intro__text__wrapper {
@@ -31,6 +40,8 @@
     width: 64.8rem;
   }
 
+  
+
   p {
     @extend %text-24;
     margin-top: 2.8rem;
@@ -40,8 +51,10 @@
 .intro__title {
   @extend %title-40;
 
-  .intro:nth-child(5) & {
+  .intro:nth-child(6) & {
     @extend %title-60;
+    position: absolute;
+    top: 13rem;
   }
 }
 
@@ -66,10 +79,9 @@
     margin-left: 5.2rem;
   }
 
-  .intro:nth-child(5) & {
+  .intro:nth-child(6) & {
     height: 62.2rem;
-    width: 83.3rem;
-    margin-left: -5.2rem;
+    width: 132.3rem;
     z-index: -1;
   }
 }
@@ -134,7 +146,5 @@
 
 }
 
-#about {
-  scroll-margin-top: 10rem;
-}
+
 
