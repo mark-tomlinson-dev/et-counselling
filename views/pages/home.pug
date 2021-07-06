@@ -35,10 +35,13 @@ block content
                 .faq__gradient__ribbon
                 .faq__gradient__ribbon
 
+              
                 h2.faq__title=section.primary.title
                 each question in section.items
-                  h3.faq__question=question.faq_question
-                  p.faq__answer=question.faq_answer
+                  details
+                    summary.faq__question=question.faq_question
+                    .content
+                      p.faq__answer=question.faq_answer
 
       section.contact#contact
         .contact__wrapper       
