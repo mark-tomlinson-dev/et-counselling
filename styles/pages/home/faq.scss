@@ -1,22 +1,14 @@
-summary {
-  // background: #8dd792;
-  // padding: 5px;
-  // border: 2px solid transparent;
-  // outline: none;
-  &:focus {
-    border-color: black;
-  }
-}
 
 details {
+  margin-top: 0.4rem;
 
-  // margin-top: 5px;
+  
 }
 
 
 .faq__answer__content {
-  border-top: none;
-  padding: 10px;
+  padding-top: 2.4rem;
+  padding-bottom: 2.4rem;
   border-top: none;
 }
 
@@ -34,22 +26,22 @@ details {
 .faq__title {
   @extend %title-40;
   padding-top: 4rem;
-  margin-bottom: 6rem;
+  margin-bottom: 4rem;
 }
 .faq__question {
-  margin-bottom: 3rem;
-  padding-bottom: 2rem;
   @extend %text-24;
   border-bottom: solid 1px $color-black;
   cursor: pointer;
+  padding-top: 2.4rem;
+  padding-bottom: 2.4rem;
 }
 .faq__answer {
   @extend %text-24;
-  margin-bottom: 2rem;
 
 }
 
 .faq__gradient__ribbon {
+  z-index: -1;
   height: 9rem;
   width: 36rem;
   position: absolute;
