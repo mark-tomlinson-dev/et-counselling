@@ -11,7 +11,6 @@ class App {
   createContent() {
     this.content = document.querySelector('.content')
     this.template = this.content.getAttribute('data-template')
-
   }
 
   createPages() {

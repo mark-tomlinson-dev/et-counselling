@@ -1,3 +1,26 @@
+summary {
+  // background: #8dd792;
+  // padding: 5px;
+  // border: 2px solid transparent;
+  // outline: none;
+  &:focus {
+    border-color: black;
+  }
+}
+
+details {
+
+  // margin-top: 5px;
+}
+
+
+.faq__answer__content {
+  border-top: none;
+  padding: 10px;
+  border-top: none;
+}
+
+
 .faq {
   max-width: 122rem;
   margin: 0 auto;
@@ -23,7 +46,7 @@
 .faq__answer {
   @extend %text-24;
   margin-bottom: 2rem;
-  display: none;
+
 }
 
 .faq__gradient__ribbon {

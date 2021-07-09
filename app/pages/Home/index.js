@@ -5,6 +5,7 @@ export default class Home extends Page {
     super({
       id: 'home',
       element: '.home',
+      
       elements: {
         wrapper: '.home__wrapper',
         button: '.home__hero__button__link',
