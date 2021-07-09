@@ -1,8 +1,20 @@
+#faq {
+  scroll-margin-top: 7rem;
+}
+
+
+
 
 details {
   margin-top: 0.4rem;
+}
 
-  
+// Remove default summary ::marker styles
+details > summary {
+  list-style: none;
+}
+details > summary::-webkit-details-marker {
+  display: none;
 }
 
 
