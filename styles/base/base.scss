@@ -2,6 +2,16 @@ html {
   font-size: calc(100vw / 1920 * 10);
   scroll-behavior: smooth;
 
+  // Jack scroll for smooth scroll effect
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+
+  // stop bounce effect
+  overflow: hidden;
+
 
   @include media('<tablet') {
     font-size: calc(100vw / 1024 * 10);
@@ -16,5 +26,19 @@ body {
   font-family: $font-brandon;
   background-color: $color-white;
 
-  
+  // Jack scroll for smooth scroll effect
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%; 
+}
+
+.content {
+  // Jack scroll for smooth scroll effect
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%; 
 }

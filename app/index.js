@@ -4,6 +4,8 @@ class App {
   constructor() {
     this.createContent()
     this.createPages()
+    
+    this.update()
   }
 
   createContent() {
@@ -12,13 +14,22 @@ class App {
 
   }
 
-  createPages () {
+  createPages() {
     this.pages = {
       home: new Home()
     }
 
     this.page = this.pages[this.template]
     this.page.create()
+    this.page.show()
+  }
+
+  update() {
+    if(this.page && this.page.update) {
+      this.page.update()
+    }
+
+    this.frame = window.requestAnimationFrame(this.update.bind(this))
   }
 }
 

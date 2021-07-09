@@ -35,10 +35,9 @@ html(lang="en")
  
   body
     include ./partials/header.pug
-
+   
     .content#content(data-template=template)
       block content
-    
-    include ./partials/footer.pug
+      include ./partials/footer.pug
 
     script(src="main.js")
