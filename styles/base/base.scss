@@ -3,14 +3,14 @@ html {
   scroll-behavior: smooth;
 
   // Jack scroll for smooth scroll effect
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
+  // position: fixed;
+  // top: 0;
+  // left: 0;
+  // height: 100%;
+  // width: 100%;
 
   // stop bounce effect
-  overflow: hidden;
+  // overflow: hidden;
 
 
   @include media('<tablet') {
@@ -27,18 +27,18 @@ body {
   background-color: $color-white;
 
   // Jack scroll for smooth scroll effect
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%; 
+  // position: fixed;
+  // top: 0;
+  // left: 0;
+  // height: 100%;
+  // width: 100%; 
 }
 
 .content {
   // Jack scroll for smooth scroll effect
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%; 
+  // position: absolute;
+  // top: 0;
+  // left: 0;
+  // height: 100%;
+  // width: 100%; 
 }

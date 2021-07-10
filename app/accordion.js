@@ -1,7 +1,5 @@
 export default class Accordion {
-  
-  // The default constructor for each accordion. The constructor is the place we save all the data needed per accordion.
-  constructor() {
+  constructor(el) {
     // Store the <details> element
     this.el = el;
     // Store the <summary> element
@@ -9,12 +7,7 @@ export default class Accordion {
     // Store the <div class="content"> element
     this.content = el.querySelector('.faq__answer__content');
 
-
-
-
-  
-
-    // Store the animation object (so we can cancel it, if needed)
+    // Store the animation object (so we can cancel it if needed)
     this.animation = null;
     // Store if the element is closing
     this.isClosing = false;
@@ -24,9 +17,8 @@ export default class Accordion {
     this.summary.addEventListener('click', (e) => this.onClick(e));
   }
 
-  // Function called when user clicks on the summary
   onClick(e) {
-      // Stop default behaviour from the browser
+    // Stop default behaviour from the browser
     e.preventDefault();
     // Add an overflow on the <details> to avoid content overflowing
     this.el.style.overflow = 'hidden';
@@ -39,40 +31,36 @@ export default class Accordion {
     }
   }
 
-  // Function called to close the content with an animation
   shrink() {
     // Set the element as "being closed"
     this.isClosing = true;
-  
+    
     // Store the current height of the element
     const startHeight = `${this.el.offsetHeight}px`;
     // Calculate the height of the summary
     const endHeight = `${this.summary.offsetHeight}px`;
-  
+    
     // If there is already an animation running
     if (this.animation) {
       // Cancel the current animation
       this.animation.cancel();
     }
-  
+    
     // Start a WAAPI animation
     this.animation = this.el.animate({
       // Set the keyframes from the startHeight to endHeight
       height: [startHeight, endHeight]
     }, {
-      // If the duration is too slow or fast, you can change it here
       duration: 400,
-      // You can also change the ease of the animation
       easing: 'ease-out'
     });
-  
+    
     // When the animation is complete, call onAnimationFinish()
     this.animation.onfinish = () => this.onAnimationFinish(false);
     // If the animation is cancelled, isClosing variable is set to false
     this.animation.oncancel = () => this.isClosing = false;
   }
 
-  // Function called to open the element after click
   open() {
     // Apply a fixed height on the element
     this.el.style.height = `${this.el.offsetHeight}px`;
@@ -82,7 +70,6 @@ export default class Accordion {
     window.requestAnimationFrame(() => this.expand());
   }
 
-  // Function called to expand the content with an animation
   expand() {
     // Set the element as "being expanding"
     this.isExpanding = true;
@@ -90,21 +77,19 @@ export default class Accordion {
     const startHeight = `${this.el.offsetHeight}px`;
     // Calculate the open height of the element (summary height + content height)
     const endHeight = `${this.summary.offsetHeight + this.content.offsetHeight}px`;
-
+    
     // If there is already an animation running
     if (this.animation) {
       // Cancel the current animation
       this.animation.cancel();
     }
-
+    
     // Start a WAAPI animation
     this.animation = this.el.animate({
       // Set the keyframes from the startHeight to endHeight
       height: [startHeight, endHeight]
     }, {
-      // If the duration is too slow of fast, you can change it here
       duration: 400,
-      // You can also change the ease of the animation
       easing: 'ease-out'
     });
     // When the animation is complete, call onAnimationFinish()
@@ -113,7 +98,6 @@ export default class Accordion {
     this.animation.oncancel = () => this.isExpanding = false;
   }
 
-  // Callback when the shrink or expand animations are done
   onAnimationFinish(open) {
     // Set the open attribute based on the parameter
     this.el.open = open;
@@ -125,7 +109,5 @@ export default class Accordion {
     // Remove the overflow hidden and the fixed height
     this.el.style.height = this.el.style.overflow = '';
   }
-
-
 }
 
