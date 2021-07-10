@@ -29,11 +29,7 @@ const initApi = (req) => {
   });
 }
 
-const handleLinkResolver = doc => {
-  if (doc.type == 'counselling') {
-    return '/counselling'
-  }
-
+const handleLinkResolver = () => {
   return '/'
 }
 
@@ -61,35 +57,12 @@ app.get('/', async (req, res) => {
   const home = await api.getSingle('home')
   const meta = await api.getSingle('meta')
 
-  // console.log(home.data.body)
-
-  // let headers = data.filter(section => section.slice_type == "header")
-  // console.log(headers)
-
-  // let sections = []
-
-  // for (let section of home.data.body) {
-  //   sections.push(section)
-  //   console.log(sections)
-  // }
-
   console.log(home.data.body)
-
-
- 
-
-
 
   res.render('pages/home', {
     home,
     meta
   })
-})
-
-
-
-app.get('/counselling', async (req, res) => {
-  res.render('pages/counselling')
 })
 
 app.listen(port, () => {
