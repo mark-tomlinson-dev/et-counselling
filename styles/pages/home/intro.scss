@@ -51,16 +51,33 @@
 
 .intro__text.active {
   opacity: 1;
-  transition: opacity 1s ease-in;
+  transition: opacity .8s ease-in;
 }
 
 .intro__title {
   @extend %title-40;
-
+  opacity: 0;
+ 
   .intro:nth-child(6) & {
     @extend %title-60;
     position: absolute;
     top: 13rem;
+  }
+}
+
+.intro__title.active {
+  animation: fade-in-move-down .6s ease-in-out;
+  opacity: 1;
+}
+
+@keyframes fade-in-move-down {
+  0% {
+    opacity: 0;
+    transform: translateY(.5rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
@@ -107,7 +124,7 @@
 .intro__media__image {
   
   object-fit: cover;
-  transform: scale(2);
+  transform: scale(1.8);
   @extend %cover;
 
 }

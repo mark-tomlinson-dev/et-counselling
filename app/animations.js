@@ -7,10 +7,9 @@ console.log(textItems)
 let titleItems = [...document.querySelectorAll('.intro__title')]
 
 
-// When the element is 20% in the viewport, trigger the intersection obs callback
+// When the element is 150px in the viewport, trigger the intersection obs callback
 let options = {
-  rootMargin: '0px',
-  threshold: .2
+  rootMargin: '-150px'
 }
 
 let setItemActive = (entries => {
