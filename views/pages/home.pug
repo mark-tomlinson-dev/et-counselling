@@ -10,8 +10,10 @@ block content
         .home__hero__wrapper
           .home__hero__text
             h1.home__hero__title=home.data.hero_tagline
-            a.home__hero__button__link=home.data.cta_button
-          
+            a.home__hero__button__link(href="#contact")=home.data.cta_button
+              svg.home__hero__button__link__icon--arrow(xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="#fff")
+                path(fill-rule="evenodd" d="M10.146 4.646a.5.5 0 01.708 0l3 3a.5.5 0 010 .708l-3 3a.5.5 0 01-.708-.708L12.793 8l-2.647-2.646a.5.5 0 010-.708z" clip-rule="evenodd")
+                path(fill-rule="evenodd" d="M2 8a.5.5 0 01.5-.5H13a.5.5 0 010 1H2.5A.5.5 0 012 8z" clip-rule="evenodd")
 
       each section in home.data.body
         //- MAIN CONTENT
@@ -34,8 +36,6 @@ block content
                 .faq__gradient__ribbon
                 .faq__gradient__ribbon
                 .faq__gradient__ribbon
-
-              
                 h2.faq__title=section.primary.title
                 each question in section.items
                   details
