@@ -7,6 +7,9 @@ export default class Accordion {
     // Store the <div class="content"> element
     this.content = el.querySelector('.faq__answer__content');
 
+    this.icon = el.querySelector('.faq__question__icon--down-chevron')
+
+
     // Store the animation object (so we can cancel it if needed)
     this.animation = null;
     // Store if the element is closing
@@ -22,10 +25,12 @@ export default class Accordion {
     e.preventDefault();
     // Add an overflow on the <details> to avoid content overflowing
     this.el.style.overflow = 'hidden';
+
+    this.icon.classList.toggle('active');
     // Check if the element is being closed or is already closed
     if (this.isClosing || !this.el.open) {
       this.open();
-    // Check if the element is being openned or is already open
+    // Check if the element is being opened or is already open
     } else if (this.isExpanding || this.el.open) {
       this.shrink();
     }
@@ -76,8 +81,7 @@ export default class Accordion {
     // Get the current fixed height of the element
     const startHeight = `${this.el.offsetHeight}px`;
     // Calculate the open height of the element (summary height + content height)
-    const endHeight = `${this.summary.offsetHeight + this.content.offsetHeight}px`;
-    
+    const endHeight = `${this.summary.offsetHeight + this.content.offsetHeight}px`;    
     // If there is already an animation running
     if (this.animation) {
       // Cancel the current animation
