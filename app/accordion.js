@@ -7,7 +7,13 @@ export default class Accordion {
     // Store the <div class="content"> element
     this.content = el.querySelector('.faq__answer__content');
 
+    this.question = el.querySelector('.faq__question')
+
+    // this.answer = el.querySelector('.faq__answer');
+
     this.icon = el.querySelector('.faq__question__icon--down-chevron')
+
+  
 
 
     // Store the animation object (so we can cancel it if needed)
@@ -27,6 +33,9 @@ export default class Accordion {
     this.el.style.overflow = 'hidden';
 
     this.icon.classList.toggle('active');
+
+    // this.question.classList.toggle('active');
+
     // Check if the element is being closed or is already closed
     if (this.isClosing || !this.el.open) {
       this.open();

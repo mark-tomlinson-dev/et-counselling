@@ -2,15 +2,9 @@
   scroll-margin-top: 7rem;
 }
 
-
-
-
 details {
 
 }
-
-
-
 
 .faq__answer__content {
   padding-bottom: 2.4rem;
@@ -19,7 +13,7 @@ details {
 
 
 .faq {
-  max-width: 110rem;
+  max-width: 120rem;
   margin: 0 auto;
 }
 
@@ -34,7 +28,7 @@ details {
   margin-bottom: 4rem;
 }
 .faq__question {
-  @extend %text-24;
+  @extend %title-28;
   border-top: solid 1px $color-black;
   cursor: pointer;
   padding-top: 2.8rem;
@@ -43,6 +37,15 @@ details {
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  &:hover {
+    color: $color-grey;
+    transition: .2s ease-in-out;
+  }  
+}
+
+.faq__question.active {
+  color: $color-grey;
 }
 
 .faq__question__icon--down-chevron {
@@ -51,7 +54,8 @@ details {
   margin-right: 3rem;
   transition: transform .3s ease;
   transform: rotate(0);
-  transform-origin: 65%
+  transform-origin: 65%;
+  will-change: transform;
 
 }
 
@@ -61,10 +65,9 @@ details {
   transform-origin: 65%;
 }
 
-
-
 .faq__answer {
   @extend %text-24;
+
 }
 
 .faq__gradient__ribbon {

@@ -6,17 +6,6 @@ console.log(textItems)
 
 let titleItems = [...document.querySelectorAll('.intro__title')]
 
-let faqQuestion = document.querySelector('.faq__question')
-let downChevronIcon = document.querySelector('faq__question__icon--down-chevron')
-
-// faqQuestion.click(function(){
-//   this.classList.toggle("rotate")
-//   console.log("fired")
-// })
-
-
-// faqQuestion.addEventListener( "click", () => faqQuestion.classList.toggle("active") );
-
 
 
 // When the element is 150px in the viewport, trigger the intersection obs callback
