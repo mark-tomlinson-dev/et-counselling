@@ -48,4 +48,8 @@ body {
     padding: 4rem;
    }
 
+   @include media('<phone') {
+    padding: 0rem;
+   }
+
 }
