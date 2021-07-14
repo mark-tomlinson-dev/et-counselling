@@ -1,6 +1,10 @@
 .contact {
   max-width: 122rem;
   margin: 15rem auto 15rem;
+
+  @include media('<tablet') {
+    margin: 15rem auto 4rem;
+   }
 }
 
 .contact__wrapper {

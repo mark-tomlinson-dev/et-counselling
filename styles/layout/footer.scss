@@ -2,6 +2,7 @@ footer {
   background: $color-black;
   padding-top: 4rem;
   padding-bottom: 4rem;
+
 }
 
 .footer__wrapper {
@@ -10,6 +11,12 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+
+
+  @include media('<tablet') {
+    padding: 4rem;
+   }
 
   @include media('<phone') {
     flex-direction: column;

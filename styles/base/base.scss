@@ -43,4 +43,9 @@ body {
   // height: 100%;
   // width: 100%; 
 
+
+  @include media('<tablet') {
+    padding: 4rem;
+   }
+
 }

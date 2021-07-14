@@ -16,6 +16,8 @@ details {
   max-width: 120rem;
   margin: 0 auto;
 
+
+
   @include media('<phone') {
     min-width: 90vw;
    }
@@ -25,6 +27,11 @@ details {
   position: relative;
   padding-left: 20rem;
   padding-right: 20rem;
+
+  @include media('<tablet') {
+    padding-left: 10rem;
+    padding-right: 10rem;
+   }
 
   @include media('<phone') {
     padding: 0rem;
