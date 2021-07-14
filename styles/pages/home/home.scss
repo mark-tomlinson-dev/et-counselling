@@ -1,6 +1,24 @@
+.content {
+
+}
+
+.home__wrapper {
+  position: relative;
+
+  @include media('<phone') {
+    padding: 2rem;
+  }
+}
+
 .home__hero__wrapper{
   max-width: 122rem;
-  margin: 0 auto;  
+  margin: 0 auto;
+
+  @include media('<phone') {
+    margin-top: 4rem;
+   }
+
+  
 }
 
 .home__hero__title {
@@ -9,6 +27,13 @@
   @extend %title-74;
   line-height: 7rem;
   // letter-spacing: -0.25rem;
+
+  @include media('<phone') {
+    margin-top: 0rem;
+    font-size: 7rem;
+    line-height: 1;
+   }
+
 }
 
 .home__hero__button__link {

@@ -15,12 +15,20 @@ details {
 .faq {
   max-width: 120rem;
   margin: 0 auto;
+
+  @include media('<phone') {
+    min-width: 90vw;
+   }
 }
 
 .faq__wrapper {
   position: relative;
   padding-left: 20rem;
   padding-right: 20rem;
+
+  @include media('<phone') {
+    padding: 0rem;
+   }
 }
 .faq__title {
   @extend %title-40;
@@ -28,7 +36,7 @@ details {
   margin-bottom: 4rem;
 }
 .faq__question {
-  @extend %title-28;
+  @extend %title-24;
   border-top: solid 1px $color-black;
   cursor: pointer;
   padding-top: 2.8rem;
@@ -40,12 +48,13 @@ details {
 
   &:hover {
     color: $color-grey;
-    transition: .2s ease-in-out;
+    transition: all .2s ease-in-out;
   }  
 }
 
 .faq__question.active {
   color: $color-grey;
+ 
 }
 
 .faq__question__icon--down-chevron {
@@ -53,9 +62,8 @@ details {
   width: 2.4rem;
   margin-right: 3rem;
   transition: transform .3s ease;
-  transform: rotate(0);
   transform-origin: 65%;
-  will-change: transform;
+
 
 }
 
@@ -67,7 +75,6 @@ details {
 
 .faq__answer {
   @extend %text-24;
-
 }
 
 .faq__gradient__ribbon {
@@ -78,6 +85,10 @@ details {
   background: linear-gradient(270deg, rgba(155, 155, 155, 0.32) 0%, rgba(255, 255, 255, 0.1728) 100%);
   top: 20rem;
   right: -34.2rem;
+
+  @include media('<phone') {
+    display: none;
+   }
 
   &:nth-of-type(2) {
     height: 12.5rem;
@@ -94,7 +105,6 @@ details {
     background: linear-gradient(-90deg, #C4C4C4 0%, rgba(249, 247, 255, 0) 100%);
     top: 80rem;
     position: absolute;
-
   }
 
 }

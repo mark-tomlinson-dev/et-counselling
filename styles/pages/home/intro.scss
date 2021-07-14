@@ -8,19 +8,26 @@
   margin: 10rem auto 15rem;
   position: relative;
   max-width: 122rem;
+
+  @include media('<phone') {
+    flex-direction: column;
+    margin: 8rem auto 0 auto;
+  }
+
   
   
   .intro--right & {
     flex-direction: row-reverse;
+
+    @include media('<phone') {
+      flex-direction: column;
+    }
   }
 
   .intro:nth-child(4) & {
     margin-bottom: 0;
   }
 
-  .intro:nth-child(6) & {
- 
-  }
 
 }
 
@@ -30,9 +37,18 @@
   align-self: center;
   width: 59rem;
 
+  @include media('<phone') {
+    width: 100%;
+  }
+
   .intro:nth-child(4) & {
     align-self: flex-start;
     padding-top: 10rem;
+
+    @include media('<phone') {
+      padding-top: 0rem;
+      align-self: initial;
+     }
   }
 
   .intro:nth-child(5) & {
@@ -51,7 +67,7 @@
 
 .intro__text.active {
   opacity: 1;
-  transition: opacity .8s ease-in;
+  transition: opacity 1s ease-in;
 }
 
 .intro__title {
@@ -66,39 +82,52 @@
 }
 
 .intro__title.active {
-  animation: fade-in-move-down .6s ease-in-out;
+  animation: fade-in-move-down 1s ease-in;
   opacity: 1;
 }
 
 @keyframes fade-in-move-down {
   0% {
     opacity: 0;
-    transform: translateY(.5rem);
+
   }
   100% {
     opacity: 1;
-    transform: translateY(0);
   }
 }
 
 .intro__media {
   position: relative;
-  overflow: hidden;
-  width: 0px;
+  // overflow: hidden;
+  // width: 0px;
 }
 
 .intro__media {
+
+  @include media('<phone') {
+    margin-top: 4rem;
+   }
+
 
   .intro:nth-child(2) & {
     height: 65.4rem;
     width: 57.5rem;
     margin-left: 5.2rem;
+
+    @include media('<phone') {
+      margin-left: 0;
+      width: auto;
+     }
   }
 
   .intro:nth-child(4) & {
     height: 65.4rem;
     width: 57.5rem;
     margin-left: 5.2rem;
+
+    @include media('<phone') {
+      margin-left: 0rem;
+     }
   }
 
   .intro:nth-child(6) & {
@@ -122,6 +151,10 @@
     margin-right: 15rem;
     height: 50.2rem;
     width: 33.5rem;
+
+    @include media('<phone') {
+      margin-right: 0;
+     }
   }
 
   .intro__media__image {
@@ -140,6 +173,9 @@
 
 
 .gradient__square {
+  @include media('<phone') {
+   display: none;
+  }
 
   .intro:nth-child(2) & {
     height: 14.8rem;
@@ -162,6 +198,10 @@
 }
 
 .gradient__ribbon {
+
+  @include media('<phone') {
+    display: none;
+   }
 
   .intro:nth-child(2) & {
     height: 12.7rem;

@@ -10,6 +10,11 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @include media('<phone') {
+    flex-direction: column;
+    gap: 2rem;
+   }
 }
 
 .footer_navigation {
