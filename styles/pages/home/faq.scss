@@ -3,7 +3,12 @@
 }
 
 details {
-
+  summary {
+    list-style: none
+  }
+  summary::-webkit-details-marker {
+    display: none;
+  }
 }
 
 .faq__answer__content {
@@ -93,7 +98,7 @@ details {
   top: 20rem;
   right: -34.2rem;
 
-  @include media('<phone') {
+  @include media('<tablet') {
     display: none;
    }
 

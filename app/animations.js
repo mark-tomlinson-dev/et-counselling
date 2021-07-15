@@ -10,7 +10,7 @@ let titleItems = [...document.querySelectorAll('.intro__title')]
 
 // When the element is 150px in the viewport, trigger the intersection obs callback
 let options = {
-  rootMargin: '-150px'
+  rootMargin: '-80px'
 }
 
 let setItemActive = (entries => {

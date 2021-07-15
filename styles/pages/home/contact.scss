@@ -3,14 +3,27 @@
   margin: 15rem auto 15rem;
 
   @include media('<tablet') {
-    margin: 15rem auto 4rem;
+    margin: 4rem auto 4rem;
    }
+
+  @include media('<phone') {
+  min-width: 90vw;
+  }
 }
 
 .contact__wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+ 
+  @include media('<tablet') {
+    padding-left: 10rem;
+    padding-right: 10rem;
+   }
+
+  @include media('<phone') {
+    padding: 0rem;
+  }
 }
 
 .contact__title {
@@ -19,6 +32,11 @@
   padding-top: 13rem;
   @extend %title-60;
   margin-bottom: 5.5rem;
+
+  @include media('<tablet') {
+    grid-column: 1/4;
+    padding-top: 0rem;
+  }
 
   &::after {
     content: "";
@@ -35,6 +53,10 @@
   grid-row: 2/3;
   display: flex;
   flex-direction: column;
+  
+  @include media('<tablet') {
+    grid-column: 1/3;
+  }
 }
 
 .contact__tagline {
@@ -57,10 +79,16 @@
   grid-column: 2/4;
   grid-row: 1/4;
   z-index: -1;
+  
+  @include media('<tablet') {
+    display: none;
+  }
  
 }
 
 .contact__media__image {
   height: 53rem;
   width: 100%;
+
+
 }

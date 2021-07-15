@@ -28,6 +28,11 @@
   line-height: 7rem;
   // letter-spacing: -0.25rem;
 
+  @include media('<tablet') {
+    font-size: 7rem;
+  }
+
+
   @include media('<phone') {
     margin-top: 0rem;
     font-size: 7rem;
