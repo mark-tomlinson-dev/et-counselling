@@ -1,0 +1,11 @@
+.wrapper {
+  display: flex;
+  margin: 10rem auto 15rem;
+  position: relative;
+  max-width: 122rem;
+  
+  @include media('<phone') {
+    flex-direction: column;
+    margin: 8rem auto 0 auto;
+  }
+}

@@ -1,0 +1,33 @@
+.button {
+  @extend %title-14;
+  display: flex;
+  border-radius: 2px;
+  text-transform: uppercase;
+  background-color: $color-black;
+  color: $color-white;
+  padding: 1.2rem 2.4rem;
+  cursor: pointer;
+  margin-top: 4rem;
+  letter-spacing: 0.10rem;
+  align-items: center;
+  max-width: 28rem;
+  
+  &:hover {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  }
+
+  &:hover .button__icon--arrow {
+    transform: translateX(0.4rem);
+  }
+
+  &:active {
+    background-color: $color-grey;
+  }
+}
+
+.button__icon--arrow {
+  height: 2.8rem;
+  width: 2.8rem;
+  margin-left: 1rem;
+  transition: transform 0.2s ease-in-out;
+}

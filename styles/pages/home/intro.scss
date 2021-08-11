@@ -1,270 +1,51 @@
-#about {
-  scroll-margin-top: 10rem;
-}
-
-
-.intro__wrapper {
+.intro__inner {
   display: flex;
-  margin: 10rem auto 15rem;
-  position: relative;
-  max-width: 122rem;
-
-  @include media('<phone') {
-    flex-direction: column;
-    margin: 8rem auto 0 auto;
-  }
-
-  
-  
-  .intro--right & {
-    flex-direction: row-reverse;
-
-    @include media('<phone') {
-      flex-direction: column;
-    }
-  }
-
-  .intro:nth-child(4) & {
-    margin-bottom: 0;
-  }
-
-
-}
-
-.intro__text__wrapper {
-  display: flex;
-  flex-direction: column;
   align-self: center;
-  width: 59rem;
 
   @include media('<phone') {
     width: 100%;
   }
+}
 
-  .intro:nth-child(4) & {
-    align-self: flex-start;
-    padding-top: 10rem;
+.intro__text-content {
+  align-self: center;
+  margin-right: 5rem;
 
-    @include media('<phone') {
-      padding-top: 0rem;
-      align-self: initial;
-     }
-  }
-
-  .intro:nth-child(5) & {
-    width: 64.8rem;
+  .intro__title {
+    @extend %title-40;
   }
 
   p {
     @extend %text-24;
     margin-top: 2.8rem;
+  }
 
-    @include media('<phone') {
-      margin-top: 2.4rem;
-    }
+  @include media('<phone') {
+    margin-top: 2.4rem;
   }
 }
 
-.intro__text {
-  opacity: 0;
-}
-
-.intro__text.active {
-  opacity: 1;
-  transition: opacity 1s ease-in;
-}
-
-.intro__title {
-  @extend %title-40;
-  opacity: 0;
- 
-  .intro:nth-child(6) & {
-    @extend %title-60;
-    position: absolute;
-    top: 13rem;
-  }
-}
-
-.intro__title.active {
-  animation: fade-in-move-down 1s ease-in;
-  opacity: 1;
-}
-
-@keyframes fade-in-move-down {
-  0% {
-    opacity: 0;
-
-  }
-  100% {
-    opacity: 1;
-  }
-}
 
 .intro__media {
-  position: relative;
-  // overflow: hidden;
-  // width: 0px;
-}
-
-.intro__media {
+  width: 100%;
 
   @include media('<phone') {
     margin-top: 4rem;
    }
-
-
-  .intro:nth-child(2) & {
-    height: 65.4rem;
-    width: 57.5rem;
-    margin-left: 5.2rem;
-
-    @include media('<phone') {
-      display: none;
-     }
-  }
-
-  .intro:nth-child(4) & {
-    height: 65.4rem;
-    width: 57.5rem;
-    margin-left: 5.2rem;
-
-    // @include media('<phone') {
-    //   display: none;
-    //  }
-  }
-
-  .intro:nth-child(6) & {
-    height: 62.2rem;
-    width: 132.3rem;
-    z-index: -1;
-
-    @include media('<phone') {
-      display: none;
-     }
-
-
-  }
-  
-  .intro__media__image {
-    transform: scale(1); 
-    transition: 1.2s ease-out;
-  }
 }
 
-.intro__media.active {
-  opacity: 1;
-  transition: opacity 0s, width 1s;
-
-
-  .intro:nth-child(3) & {
-    margin-right: 15rem;
-    height: 50.2rem;
-    width: 33.5rem;
-
-    @include media('<phone') {
-      margin-right: 0;
-     }
-  }
-
-  .intro:nth-child(4) & {
-    @include media('<phone') {
-      display: none;
-     }
-  }
-
-  .intro__media__image {
-    transform: scale(1); 
-    transition: 1s ease-out;
-  }
-}
 
 .intro__media__image {
-  
   object-fit: cover;
-  transform: scale(1.6);
-  @extend %cover;
-
 }
 
 
 .gradient__square {
-  @include media('<phone') {
-   display: none;
-  }
 
-  .intro:nth-child(2) & {
-    height: 14.8rem;
-    width: 14.6rem;
-    position: absolute;
-    background: linear-gradient(90deg, #C4C4C4 0%, rgba(249, 247, 255, 0) 100%);
-    top: -4.5rem;
-    left: 49%;
-    z-index: -1;
-  }
-
-  .intro:nth-child(3) & {
-    height: 3.3rem;
-    width: 19.7rem;
-    position: absolute;
-    background-color: $color-orange;
-    top: 47rem;
-    left: 35rem;
-
-    @include media('<tablet') {
-      left: 16rem;
-      
-    }
-
-  }
 }
 
 .gradient__ribbon {
 
-  @include media('<phone') {
-    display: none;
-   }
-
-  .intro:nth-child(2) & {
-    height: 12.7rem;
-    width: 74.8rem;
-    position: absolute;
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(69, 64, 64, 0.65) 102.61%);
-    top: 49.4rem;
-    right: 20.8rem;
-  }
-
-  .intro:nth-child(3) & {
-    height: 12.3rem;
-    width: 52.8rem;
-    position: absolute;
-    background: linear-gradient(90deg, #C4C4C4 0%, rgba(249, 247, 255, 0) 100%);
-    top: 43rem;
-    left: -10rem;
-
-    @include media('<tablet') {
-      display: none;
-    }
-
-  }
-
-  .intro:nth-child(4) & {
-    height: 12.3rem;
-    width: 83.5rem;
-    position: absolute;
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #B3B2B2 100%);
-    top: 45rem;
-    left: 20rem;
-
-    @include media('<tablet') {
-      height: 11.3rem;
-      width: 70.5rem;
-      top: 51rem;
-      left: 16rem;
-    }
-
-
-
-  }
 
 }
 

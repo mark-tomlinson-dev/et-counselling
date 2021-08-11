@@ -1,21 +1,16 @@
-#about {
-  scroll-margin-top: 10rem;
-}
-
-.about__inner {
+.adoption__inner {
   display: flex;
-  flex-direction: row-reverse;
 
   @include media('<phone') {
     width: 100%;
   }
 }
 
-.about__text-content {
-  align-self: flex-end;
-  margin-left: 5rem;
+.adoption__text-content {
+  align-self: center;
+  margin-right: 5rem;
 
-  .about__title {
+  .adoption__title {
     @extend %title-40;
   }
 
@@ -30,8 +25,9 @@
 }
 
 
-.about__media {
+.adoption__media {
   width: 100%;
+ 
 
   @include media('<phone') {
     margin-top: 4rem;
@@ -39,8 +35,9 @@
 }
 
 
-.about__media__image {
+.adoption__media__image {
   object-fit: cover;
+
 }
 
 
