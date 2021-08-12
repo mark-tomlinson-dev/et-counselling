@@ -19,7 +19,7 @@ details {
 
 .faq {
   max-width: 120rem;
-  margin: 0 auto;
+  margin: -6rem auto 0 auto;
 
 
 
@@ -113,9 +113,9 @@ details {
 
   &:nth-of-type(3) {
     height: 15rem;
-    width: 103rem;
+    width: 100rem;
     background: linear-gradient(-90deg, #C4C4C4 0%, rgba(249, 247, 255, 0) 100%);
-    top: 80rem;
+    top: 74rem;
     position: absolute;
   }
 

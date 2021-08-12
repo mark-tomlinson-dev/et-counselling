@@ -1,7 +1,7 @@
 footer {
-  background: $color-black;
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  background: $color-white;
+  padding-top: 3.6rem;
+  padding-bottom: 3.6rem;
 
 }
 
@@ -31,22 +31,30 @@ footer {
 
 .footer__navigation__list__link {
   color: $color-grey;
-  @extend %text-20;
+  @extend %text-16;
   transition: 150ms ease;
 
   &:hover {
-    color: $color-white;
+    color: $color-black;
   }
 
 } 
 
 .footer__copyright {
   color: $color-grey;
-  @extend %text-20;
+  @extend %text-16;
 }
 
 .footer__button__back-to-top {
-  color: $color-grey;
-  @extend %text-20;
+  display: flex;
+  color: $color-black;
+  @extend %text-16;
+  cursor: pointer;
+
+  svg {
+    height: 1.4rem;
+    width: 1.4rem;
+    padding: 0 1rem;
+  }
 } 
 

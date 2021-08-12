@@ -7,8 +7,9 @@
 }
 
 .adoption__text-content {
-  align-self: center;
-  margin-right: 5rem;
+  margin-top: 10rem;
+  margin-right: 10rem;
+  width: fit-content;
 
   .adoption__title {
     @extend %title-40;
@@ -27,6 +28,7 @@
 
 .adoption__media {
   width: 100%;
+  
  
 
   @include media('<phone') {
@@ -37,18 +39,11 @@
 
 .adoption__media__image {
   object-fit: cover;
-
-}
-
-
-.gradient__square {
-
-}
-
-.gradient__ribbon {
+  height: 60rem;
 
 
 }
+
 
 
 

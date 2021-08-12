@@ -12,8 +12,9 @@
 }
 
 .about__text-content {
-  align-self: flex-end;
-  margin-left: 5rem;
+  margin-top: 2.4rem;
+
+  margin-left: 18rem;
 
   .about__title {
     @extend %title-40;
@@ -32,6 +33,7 @@
 
 .about__media {
   width: 100%;
+  margin-left: 10rem;
 
   @include media('<phone') {
     margin-top: 4rem;
@@ -41,17 +43,10 @@
 
 .about__media__image {
   object-fit: cover;
-}
-
-
-.gradient__square {
+  height: 50.2rem;
 
 }
 
-.gradient__ribbon {
-
-
-}
 
 
 

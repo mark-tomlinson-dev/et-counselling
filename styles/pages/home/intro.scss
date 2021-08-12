@@ -1,6 +1,7 @@
 .intro__inner {
   display: flex;
   align-self: center;
+  position: relative;
 
   @include media('<phone') {
     width: 100%;
@@ -36,18 +37,12 @@
 
 
 .intro__media__image {
+ 
   object-fit: cover;
 }
 
 
-.gradient__square {
 
-}
-
-.gradient__ribbon {
-
-
-}
 
 
 
