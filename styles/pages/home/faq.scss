@@ -60,7 +60,7 @@ details {
 
   &:hover {
     color: $color-grey;
-    transition: all .2s ease-in-out;
+    transition: .2s ease-in-out;
   }  
 }
 
@@ -89,34 +89,3 @@ details {
   @extend %text-24;
 }
 
-.faq__gradient__ribbon {
-  z-index: -1;
-  height: 9rem;
-  width: 36rem;
-  position: absolute;
-  background: linear-gradient(270deg, rgba(155, 155, 155, 0.32) 0%, rgba(255, 255, 255, 0.1728) 100%);
-  top: 20rem;
-  right: -34.2rem;
-
-  @include media('<tablet') {
-    display: none;
-   }
-
-  &:nth-of-type(2) {
-    height: 12.5rem;
-    width: 35rem;
-    background: linear-gradient(-270deg, rgba(117, 117, 117, 0.47) 0%, rgba(255, 255, 255, 0) 84.54%);
-    top: 50rem;
-    left: -10rem;
-    position: absolute;
-  }
-
-  &:nth-of-type(3) {
-    height: 15rem;
-    width: 100rem;
-    background: linear-gradient(-90deg, #C4C4C4 0%, rgba(249, 247, 255, 0) 100%);
-    top: 74rem;
-    position: absolute;
-  }
-
-}

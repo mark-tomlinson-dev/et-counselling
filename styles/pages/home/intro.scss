@@ -26,18 +26,14 @@
   }
 }
 
-
 .intro__media {
   width: 100%;
-
   @include media('<phone') {
     margin-top: 4rem;
    }
 }
 
-
-.intro__media__image {
- 
+.intro__media__image { 
   object-fit: cover;
 }
 

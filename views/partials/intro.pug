@@ -1,0 +1,10 @@
+article.intro.panel
+  .wrapper
+    .intro__inner
+      .intro__text-content
+        h2.intro__title=home.data.intro_title
+        .intro__text!=PrismicDOM.RichText.asHtml(home.data.intro_text)
+      figure.intro__media
+        img.intro__media__image(alt=home.data.intro_image.alt src=home.data.intro_image.url)
+      .intro__gradient__square 
+      .intro__gradient__ribbon

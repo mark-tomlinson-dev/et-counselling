@@ -17,7 +17,7 @@
   }
 
   &:hover .button__icon--arrow {
-    transform: translateX(0.4rem);
+    transform: translateX(0.5rem);
   }
 
   &:active {
@@ -29,5 +29,5 @@
   height: 2.8rem;
   width: 2.8rem;
   margin-left: 1rem;
-  transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in;
 }

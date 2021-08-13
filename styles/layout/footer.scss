@@ -1,16 +1,12 @@
-footer {
-  background: $color-white;
-  padding-top: 3.6rem;
-  padding-bottom: 3.6rem;
-
-}
-
 .footer__wrapper {
   max-width: 122rem;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  // border-top: solid 1px $color-light-grey;
+  padding-top: 3.6rem;
+  padding-bottom: 3.6rem;
 
 
 
@@ -30,26 +26,32 @@ footer {
 } 
 
 .footer__navigation__list__link {
-  color: $color-grey;
   @extend %text-16;
+  color: $color-grey;
   transition: 150ms ease;
 
   &:hover {
     color: $color-black;
   }
-
 } 
 
 .footer__copyright {
-  color: $color-grey;
   @extend %text-16;
+  color: $color-grey;
 }
 
 .footer__button__back-to-top {
-  display: flex;
-  color: $color-black;
   @extend %text-16;
+  display: flex;
+  color: $color-grey;
   cursor: pointer;
+
+  &:hover {
+    color: $color-black;
+    svg {
+      fill: $color-black;
+    }
+  }
 
   svg {
     height: 1.4rem;
