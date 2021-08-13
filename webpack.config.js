@@ -41,7 +41,8 @@ module.exports = {
       patterns: [
         {
           from: './shared',
-          to: ''
+          to: '',
+          noErrorOnMissing: true
         }
       ],
     }),

@@ -1,9 +1,8 @@
 .hero__title {
+  @extend %title-60;
   margin-top: 12rem;
   max-width: 24ch;
-  @extend %title-60;
   line-height: 6rem;
-  // letter-spacing: -0.25rem;
 
   @include media('<tablet') {
     font-size: 7rem;

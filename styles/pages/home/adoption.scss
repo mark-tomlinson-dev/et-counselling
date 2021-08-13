@@ -1,48 +1,46 @@
-.adoption__inner {
-  display: flex;
-
-  @include media('<phone') {
-    width: 100%;
-  }
-}
-
-.adoption__text-content {
-  margin-top: 10rem;
-  margin-right: 10rem;
-  width: fit-content;
-
-  .adoption__title {
-    @extend %title-40;
-  }
-
-  p {
-    @extend %text-24;
-    margin-top: 2.8rem;
-  }
-
-  @include media('<phone') {
-    margin-top: 2.4rem;
-  }
-}
-
-
-.adoption__media {
-  width: 100%;
+.adoption {
+  &__inner {
+    display: flex;
   
- 
-
-  @include media('<phone') {
-    margin-top: 4rem;
-   }
+    @include media('<phone') {
+      width: 100%;
+    }
+  }
+  
+  &__text-content {
+    margin-top: 10rem;
+    margin-right: 10rem;
+    width: fit-content;
+  
+    &__title {
+      @extend %title-40;
+    }
+  
+    p {
+      @extend %text-24;
+      margin-top: 2.8rem;
+    }
+  
+    @include media('<phone') {
+      margin-top: 2.4rem;
+    }
+  }
+  
+  &__media {
+    width: 100%;
+    @include media('<phone') {
+      margin-top: 4rem;
+     }
+  
+     &__image {
+       object-fit: cover;
+     }
+  }
 }
 
 
-.adoption__media__image {
-  object-fit: cover;
-  height: 60rem;
 
 
-}
 
 
 

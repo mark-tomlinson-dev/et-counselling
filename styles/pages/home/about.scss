@@ -1,54 +1,40 @@
-#about {
-  scroll-margin-top: 10rem;
-}
-
-.about__inner {
-  display: flex;
-  flex-direction: row-reverse;
-
-  @include media('<phone') {
-    width: 100%;
-  }
-}
-
-.about__text-content {
-  margin-top: 2.4rem;
-
-  margin-left: 18rem;
-
-  .about__title {
-    @extend %title-40;
+.about {
+  &__inner {
+    display: flex;
+    flex-direction: row-reverse;
+  
+    @include media('<phone') {
+      width: 100%;
+    }
   }
 
-  p {
-    @extend %text-24;
-    margin-top: 2.8rem;
-  }
-
-  @include media('<phone') {
+  &__text-content {
     margin-top: 2.4rem;
+    margin-left: 18rem;
+  
+    &__title {
+      @extend %title-40;
+    }
+  
+    &__text p {
+      @extend %text-24;
+      margin-top: 2.8rem;
+    }
+  
+    @include media('<phone') {
+      margin-top: 2.4rem;
+    }
+  }
+  
+  &__media {
+    width: 100%;
+    margin-left: 10rem;
+    @include media('<phone') {
+      margin-top: 4rem;
+     }
+
+    &__image {
+      object-fit: cover;
+    }
   }
 }
-
-
-.about__media {
-  width: 100%;
-  margin-left: 10rem;
-
-  @include media('<phone') {
-    margin-top: 4rem;
-   }
-}
-
-
-.about__media__image {
-  object-fit: cover;
-  height: 50.2rem;
-
-}
-
-
-
-
-
-

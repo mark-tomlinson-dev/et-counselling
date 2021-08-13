@@ -2,7 +2,7 @@
   margin-left: auto;
   margin-right: auto;
   position: relative;
-  max-width: 122rem;
+  max-width: $content-width;
   
   @include media('<phone') {
     flex-direction: column;

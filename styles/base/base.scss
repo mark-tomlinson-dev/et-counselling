@@ -16,7 +16,7 @@ body {
   background-color: $color-white;
 }
 
-.content {
+#main-content {
   @include media('<tablet') {
     padding: 4rem;
    }
