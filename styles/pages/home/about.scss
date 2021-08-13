@@ -1,38 +1,30 @@
-.intro {
+.about {
   &__inner {
     display: flex;
-    align-self: center;
-    position: relative;  
+    flex-direction: row-reverse;
+  
     @include media('<phone') {
       width: 100%;
     }
   }
 
   &__text-content {
-    align-self: center;
-    margin-right: 8rem;
-    width: fit-content;
+    margin-top: 2.4rem;
+    margin-left: 18rem;  
     @include media('<phone') {
       margin-top: 2.4rem;
     }
   }
-
+  
   &__media {
     width: 100%;
+    margin-left: 10rem;
     @include media('<phone') {
       margin-top: 4rem;
      }
-  
-     &__image { 
-       object-fit: cover;
-     }
+
+    &__image {
+      object-fit: cover;
+    }
   }
 }
-
-
-
-
-
-
-
-

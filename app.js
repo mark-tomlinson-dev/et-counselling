@@ -59,7 +59,7 @@ app.get('/', async (req, res) => {
 
   console.log(home.data.body)
 
-  res.render('pages/home', {
+  res.render('base', {
     home,
     meta
   })

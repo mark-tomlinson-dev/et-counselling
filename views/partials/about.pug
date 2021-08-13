@@ -1,0 +1,10 @@
+article.about#about.scroll-margin.panel
+  .wrapper
+    .about__inner
+      .about__text-content
+        h2.title=home.data.about_title
+        .text!=PrismicDOM.RichText.asHtml(home.data.about_text)
+      figure.about__media
+        img.about__media__image(alt=home.data.about_image.alt src=home.data.about_image.url)
+      .about__orange__ribbon
+      .about__gradient__ribbon

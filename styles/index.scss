@@ -1,20 +1,31 @@
 @import './base/reset.scss';
 
 @import './utils/variables.scss';
-@import './utils/functions.scss';
-@import './utils/mixins.scss';
-@import './utils/vendors.scss';
 @import './utils/responsive.scss';
+@import './utils/site-wrap.scss';
+@import './utils/wrapper.scss';
+@import './utils/panel.scss';
+@import './utils/gradient-square.scss';
+@import './utils/gradient-ribbon.scss';
+@import './utils/scroll-margin.scss';
+@import './utils/title.scss';
+@import './utils/text.scss';
+
+@import './blocks/button.scss';
 
 @import './base/base.scss';
 
 @import './shared/text.scss';
 @import './shared/titles.scss';
 
-@import './layout/navigation.scss';
+@import './layout/header.scss';
 @import './layout/footer.scss';
 
-@import './pages/home/home.scss';
+@import './pages/home/hero.scss';
 @import './pages/home/intro.scss';
 @import './pages/home/faq.scss';
 @import './pages/home/contact.scss';
+@import './pages/home/about.scss';
+@import './pages/home/adoption.scss';
+
+

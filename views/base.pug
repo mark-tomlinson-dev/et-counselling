@@ -34,10 +34,14 @@ html(lang="en")
     link(href="https://use.typekit.net/kgq5far.css" rel="stylesheet")
  
   body
-    include ./partials/header.pug
-   
-    .content#content(data-template=template)
-      block content
-    include ./partials/footer.pug
-
+    include partials/header
+    .site-wrap
+      main(tabindex="-1")#main-content 
+        include partials/hero
+        include partials/intro
+        include partials/about
+        include partials/adoption
+        include partials/faq
+        include partials/contact    
+      include partials/footer
     script(src="main.js")
