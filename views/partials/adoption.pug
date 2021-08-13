@@ -2,8 +2,8 @@ article.adoption.panel
   .wrapper
     .adoption__inner
       .adoption__text-content
-        h2.adoption__text-content__title=home.data.postadoption_title
-        .adoption__text-content__text!=PrismicDOM.RichText.asHtml(home.data.postadoption_text)
+        h2.title=home.data.postadoption_title
+        .text!=PrismicDOM.RichText.asHtml(home.data.postadoption_text)
       figure.adoption__media
         img.adoption__media__image(alt=home.data.postadoption_image.alt src=home.data.postadoption_image.url)
       .adoption__gradient__ribbon
