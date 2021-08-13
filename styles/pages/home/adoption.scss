@@ -9,7 +9,7 @@
   
   &__text-content {
     margin-top: 10rem;
-    margin-right: 10rem;
+    margin-right: 8rem; 
     width: fit-content;
     @include media('<phone') {
       margin-top: 2.4rem;
