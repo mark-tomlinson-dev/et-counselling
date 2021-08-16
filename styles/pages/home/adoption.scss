@@ -11,6 +11,11 @@
     margin-top: 10rem;
     margin-right: 8rem; 
     width: fit-content;
+    @include media('<tablet') {
+      margin-top: 0rem;
+      margin-right: 5rem;
+      align-self: center;
+    }
     @include media('<phone') {
       margin-top: 2.4rem;
     }

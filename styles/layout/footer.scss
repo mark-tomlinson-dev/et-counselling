@@ -11,7 +11,7 @@
 
 
   @include media('<tablet') {
-    padding: 4rem;
+    max-width: 90rem;
    }
 
   @include media('<phone') {

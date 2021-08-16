@@ -5,8 +5,8 @@
     grid-template-rows: 1fr 1fr;
    
     @include media('<tablet') {
-      padding-left: 10rem;
-      padding-right: 10rem;
+      padding-left: 4rem;
+      padding-right: 4rem;
      }
   
     @include media('<phone') {

@@ -5,7 +5,15 @@
   height: 12.7rem;
   width: 74.8rem;
   background: $gradient-300;
+  @include media('<tablet') {
+    top: 38.4rem;
+    right: 15.8rem;
+    height: 8rem;
+    width: 49.8rem;
+  }
 }
+
+
 
 .about__gradient__ribbon {
   position: absolute;
@@ -14,6 +22,13 @@
   height: 12.3rem;
   width: 52.8rem;
   background: $gradient-100;
+  @include media('<tablet') {
+    // top: 39rem;
+    // left: -5rem;
+    // height: 8rem;
+    // width: 38rem;
+    display: none;
+  }
 }
 
 .about__orange__ribbon {
@@ -23,6 +38,12 @@
   top: 47rem;
   left: 33rem;
   background-color: $color-orange;
+  @include media('<tablet') {
+    height: 2.6rem;
+    width: 19.7rem;
+    top: 41.8rem;
+    left: 11rem;
+  }
 }
 
 .adoption__gradient__ribbon {
@@ -32,13 +53,13 @@
   height: 12.3rem;
   width: 83.5rem;
   background: $gradient-200;
-
-  // @include media('<tablet') {
-  //   top: 51rem;
-  //   left: 16rem;
-  //   height: 11.3rem;
-  //   width: 70.5rem;
-  // }  
+  @include media('<tablet') {
+    top: 40.4rem;
+    left: 29rem;
+    height: 8rem;
+    width: 49.8rem;
+    
+  }
 }
 
 .faq__gradient__ribbon {
@@ -49,10 +70,9 @@
   height: 9rem;
   width: 36rem;
   background: $gradient-200;
-
-  // @include media('<tablet') {
-  //   display: none;
-  //  }
+  @include media('<tablet') {
+    display: none;
+   }
 
   &:nth-of-type(2) {
     position: absolute;
@@ -71,3 +91,6 @@
     background: $gradient-200;
   }
 }
+
+
+
