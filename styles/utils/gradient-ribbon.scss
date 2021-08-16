@@ -33,12 +33,12 @@
   width: 83.5rem;
   background: $gradient-200;
 
-  @include media('<tablet') {
-    top: 51rem;
-    left: 16rem;
-    height: 11.3rem;
-    width: 70.5rem;
-  }  
+  // @include media('<tablet') {
+  //   top: 51rem;
+  //   left: 16rem;
+  //   height: 11.3rem;
+  //   width: 70.5rem;
+  // }  
 }
 
 .faq__gradient__ribbon {
@@ -50,9 +50,9 @@
   width: 36rem;
   background: $gradient-200;
 
-  @include media('<tablet') {
-    display: none;
-   }
+  // @include media('<tablet') {
+  //   display: none;
+  //  }
 
   &:nth-of-type(2) {
     position: absolute;

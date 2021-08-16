@@ -18,10 +18,10 @@ body {
 
 #main-content {
   @include media('<tablet') {
-    padding: 4rem;
+    // padding: 4rem;
    }
 
    @include media('<phone') {
-    padding: 0rem;
+    // padding: 0rem;
   }
 }

@@ -4,8 +4,8 @@
   position: relative;
   max-width: $content-width;
   
-  @include media('<phone') {
+  @include media('<tablet') {
     flex-direction: column;
-    margin: 8rem auto 0 auto;
+    // margin: 8rem auto 0 auto;
   }
 }
