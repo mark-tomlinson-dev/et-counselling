@@ -11,6 +11,9 @@
     height: 8rem;
     width: 49.8rem;
   }
+  @include media('<phone') {
+    display: none;
+  }
 }
 
 
@@ -44,6 +47,9 @@
     top: 41.8rem;
     left: 11rem;
   }
+  @include media('<phone') {
+    display: none;
+  }
 }
 
 .adoption__gradient__ribbon {
@@ -58,7 +64,9 @@
     left: 29rem;
     height: 8rem;
     width: 49.8rem;
-    
+  }
+  @include media('<phone') {
+    display: none;
   }
 }
 
@@ -72,7 +80,10 @@
   background: $gradient-200;
   @include media('<tablet') {
     display: none;
-   }
+  }
+  @include media('<phone') {
+    display: none;
+  }
 
   &:nth-of-type(2) {
     position: absolute;

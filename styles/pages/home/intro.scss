@@ -5,6 +5,7 @@
     position: relative;  
     @include media('<phone') {
       width: 100%;
+      display: block;
     }
   }
 
@@ -15,22 +16,23 @@
     @include media('<tablet') {
       margin-right: 3rem;
     }
-
-
     @include media('<phone') {
-      margin-top: 2.4rem;
+      margin: 0;
+      width: initial;
+      align-self: initial;
     }
   }
 
   &__media {
     width: 100%;
     @include media('<phone') {
-      margin-top: 4rem;
-     }
+      display: none;
+    }
   
      &__image { 
        object-fit: cover;
      }
+    
   }
 }
 

@@ -16,6 +16,10 @@
   &__logo__link {
     @extend %title-18;
     color: $color-black;
+
+    @include media('<phone') {
+      
+    }
   }
 
   .navigation__list {
@@ -24,6 +28,9 @@
     align-items: center;
     gap: 0 clamp(4rem,1rem + .47vw,1.33rem);
     margin: 0;
+    @include media('<phone') {
+      display: none;
+     }
   
     &__link {
       @extend %title-18;

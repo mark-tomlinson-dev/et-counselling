@@ -1,9 +1,9 @@
 .adoption {
   &__inner {
     display: flex;
-  
     @include media('<phone') {
-      width: 100%;
+      display: block;
+     
     }
   }
   
@@ -17,19 +17,18 @@
       align-self: center;
     }
     @include media('<phone') {
-      margin-top: 2.4rem;
+      margin: 0;
     }
   }
   
   &__media {
     width: 100%;
     @include media('<phone') {
-      margin-top: 4rem;
-     }
-  
-     &__image {
-       object-fit: cover;
-     }
+      display: none;
+    }
+    &__image {
+      object-fit: cover;
+    }
   }
 }
 

@@ -34,6 +34,31 @@
       display: block;
       margin-top: 1rem;
     }
+
+    @include media('<phone') {
+      display: none;
+    }
+  }
+
+  &__title-mobile {
+    display: none;
+    @include media ('<phone') {
+      display: initial;
+      grid-column: 1/3;
+      grid-row: 1;
+      padding-top: 13rem;
+      margin-bottom: 5.5rem;
+      font-size: 6rem;
+      font-weight: 600;
+    }
+    &::after {
+      content: "";
+      height: 0.8rem;
+      width: 16rem;
+      background-color: rgba(254, 176, 98, 0.75);
+      display: block;
+      margin-top: 1rem;
+    }
   }
   
   &__content {
@@ -53,7 +78,7 @@
   }
   
   &__phone {
-    @extend %text-20;
+    @extend %text-24;
     font-weight: 600;
   }
   

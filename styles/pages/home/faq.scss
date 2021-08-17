@@ -20,7 +20,9 @@ details {
       min-width: 90vw;
      }
     @include media('<phone') {
-      padding: 0rem;
+      max-width: calc(100% - 6rem);
+      margin: 0 auto;
+      padding: 0;
      }
   }
   &__title {

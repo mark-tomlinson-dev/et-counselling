@@ -1,6 +1,10 @@
+- var title = {title: home.data.contact_title}
+- var mobileTitle = {mobileTitle: home.data.contact_title_mobile}
+
 article.contact#contact.panel
   .wrapper.contact__grid       
-    h2.contact__title=home.data.contact_title
+    h2.contact__title=title.title
+    h2.contact__title-mobile=mobileTitle.mobileTitle
     .contact__content
       p.contact__tagline=home.data.contact_tagline
       p.contact__phone=home.data.phone 
