@@ -1,8 +1,6 @@
 .hero {
   @include media('<phone') {
-    min-height: 30vh;
-    display: grid;
-    // place-content: center;
+    
   }
 
   
@@ -13,7 +11,7 @@
     line-height: 6rem;
   
     @include media('<phone') {
-      
+      margin-top: 0;
      }
   }
 }

@@ -1,11 +1,15 @@
 .intro {
+  
+  @include media('<phone') {
+    background-color: #000;
+  }
+
   &__inner {
     display: flex;
     align-self: center;
     position: relative;  
     @include media('<phone') {
       width: 100%;
-      display: block;
     }
   }
 
@@ -20,6 +24,20 @@
       margin: 0;
       width: initial;
       align-self: initial;
+
+      h2 {
+        font-size: 5rem;
+        color: $color-white;
+        text-align: center;
+      }
+
+      p {
+        margin-top: 3.6rem;
+        font-size: 4rem;
+        line-height: 6rem;
+        color: $color-light-grey;
+        text-align: center;
+      }
     }
   }
 
@@ -31,6 +49,7 @@
   
      &__image { 
        object-fit: cover;
+  
      }
     
   }

@@ -8,6 +8,9 @@
     max-width: 90rem;
   }
   @include media('<phone') {
-    max-width: calc(100% - 6rem)
+    max-width: calc(100% - 6rem);
+    min-height: calc(100vh - 7.2rem);
+    display: grid;
+    place-content: center;
    }
 }

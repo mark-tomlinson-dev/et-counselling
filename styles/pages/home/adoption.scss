@@ -1,4 +1,8 @@
 .adoption {
+  @include media('<phone') {
+    display: none;
+  }
+  
   &__inner {
     display: flex;
     @include media('<phone') {
