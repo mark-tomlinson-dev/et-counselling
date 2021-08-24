@@ -17,11 +17,6 @@ body {
 }
 
 #main-content {
-  @include media('<tablet') {
-    // padding: 4rem;
-   }
-
-   @include media('<phone') {
-    // padding: 0rem;
-  }
+  display: flex;
+  flex-direction: column;
 }

@@ -3,14 +3,11 @@ article.about#about.scroll-margin.panel
     .about__inner
       .about__text-content
         h2.title=home.data.about_title
-        .desktop-about!=PrismicDOM.RichText.asHtml(home.data.about_text)
+        figure.about__media__mobile
+          img.about__media__mobile-image(alt="Liz" src=home.data.about_image_mobile.url)
+        .text!=PrismicDOM.RichText.asHtml(home.data.about_text)
       figure.about__media
         img.about__media__image(alt=home.data.about_image.alt src=home.data.about_image.url)
-      figure.about__media__mobile
-        img.about__media__mobile-image(alt="Liz" src=home.data.about_image_mobile.url)
+
       .about__orange__ribbon
       .about__gradient__ribbon
-article.about__mobile__wrapper
-    .about__inner 
-      .about__text-content 
-        .mobile-about!=PrismicDOM.RichText.asHtml(home.data.further_about)

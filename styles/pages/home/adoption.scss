@@ -1,7 +1,5 @@
 .adoption {
-  @include media('<phone') {
-    display: none;
-  }
+  background-color: #000;
   
   &__inner {
     display: flex;
@@ -22,6 +20,28 @@
     }
     @include media('<phone') {
       margin: 0;
+
+      h2 {
+        color: $color-white;
+        text-align: center;
+        font-size: 5rem;
+        display: none;
+      }
+
+      p {
+        margin-top: 8rem;
+        font-size: 4rem;
+        line-height: 6rem;
+        color: $color-light-grey;
+        text-align: center;
+
+        &:nth-child(1) {
+          margin-top: 0;
+          font-size: 4.6rem;
+          font-weight: bold;
+          color: $color-white;
+        }
+      }
     }
   }
   
