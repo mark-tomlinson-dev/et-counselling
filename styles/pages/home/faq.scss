@@ -10,7 +10,6 @@ details {
 .faq {
   @include media('<phone') {
     order: 6;
-    background-color: #000;
   }
   &__wrapper {
     position: relative;
@@ -36,7 +35,7 @@ details {
     padding-top: 4rem;
     margin-bottom: 4rem;
     @include media('<phone') {
-      color: $color-white;
+      color: $color-black;
     }
   }
   &__question {
@@ -49,7 +48,7 @@ details {
     align-items: center;
     justify-content: space-between;
     &:hover {
-      color: $color-white;
+      color: $color-black;
       transition: .2s ease-in-out;
     }  
     &__icon--down-chevron {
@@ -59,7 +58,7 @@ details {
       transition: transform .3s ease;
       transform-origin: 65%;
       @include media('<phone') {
-        fill: $color-white;
+        fill: $color-black;
       }
       &.active {
         transform: rotate(180deg);
@@ -68,7 +67,7 @@ details {
       }
     }
     @include media('<phone') {
-      color: $color-white;
+      color: $color-black;
       font-size: 3rem;
       padding-top: 5rem;
       padding-bottom: 5rem;

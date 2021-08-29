@@ -1,18 +1,56 @@
 .hero {
   @include media('<phone') {
-    
+  //  min-height: 90vh;
+  //  display: grid;
+  //  place-content: center;
   }
 
-  
   .hero__title {
     @extend %title-60;
     margin-top: 12rem;
     max-width: 24ch;
     line-height: 6rem;
-  
     @include media('<phone') {
-      margin-top: 0;
-     }
+      margin-top: -25rem;
+      line-height: 8rem;
+      font-size: 8rem;
+      font-weight: 500;
+    }
+  }
+
+  .hero__title__mobile {
+    display: none;
+    @include media('<phone') {
+      display: initial;
+      font-size: 14rem;
+      font-weight: 500;
+      line-height: 12rem;
+      display: none;
+    }
+  }
+
+  .hero__title__mobile-secondary {
+    display: none;
+    position: relative;
+    @include media('<phone') {
+      display: initial;
+      place-self: end;
+      font-size: 7rem;
+      color: $color-light-grey;
+      display: none;
+      // margin-right: 10rem;
+
+      &::before {
+        content: "";
+        background-color: $color-light-grey;
+        position: absolute;
+        width: 12rem;
+        height: 2px;
+        top: 4rem;
+        left: -12.5rem;
+       
+      }
+    }
   }
 }
 

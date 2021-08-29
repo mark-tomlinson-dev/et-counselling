@@ -7,7 +7,8 @@
   backdrop-filter: blur(8px);
 
   @include media('<phone') {
-    background-color: transparent;
+    background-color: initial;
+    backdrop-filter: initial;
   }
 
   &__wrapper {
@@ -20,7 +21,7 @@
         max-width: 90rem;
       }
       @include media('<phone') {
-        max-width: calc(100% - 6rem);
+        max-width: calc(100% - 10rem);
       }
   }
   
@@ -37,7 +38,7 @@
     color: $color-black;
 
     @include media('<phone') {
-      
+      font-size: 3.8rem;
     }
   }
 

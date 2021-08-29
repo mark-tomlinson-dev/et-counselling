@@ -1,7 +1,6 @@
 .contact {
   @include media('<phone') {
     order: 5;
-    background-color: $color-white;
   }
 
   &__grid {
@@ -16,9 +15,7 @@
 
     @include media('<phone') {
       padding: 0rem;
-      grid-template-columns: none;
-      grid-template-rows: none;
-      place-content: center;
+      display: block;
     }
   }
 
@@ -28,7 +25,6 @@
     padding-top: 13rem;
     @extend %title-60;
     margin-bottom: 5.5rem;
-  
     @include media('<tablet') {
       grid-column: 1/4;
       padding-top: 0rem;
@@ -48,6 +44,13 @@
     }
   }
 
+  &__title-mobile {
+    display: none;
+    @include media('<phone') {
+      color: $color-black;
+    }
+  }
+
   
   &__content {
     grid-column: 1/2;
@@ -60,12 +63,11 @@
     }
 
     @include media('<phone') {
+      display: block;
       p {
-        margin-top: 8rem;
-        font-size: 4rem;
+        margin-top: 4rem;
+        font-size: 3.6rem;
         line-height: 6rem;
-        color: $color-black;
-        text-align: center;
       }
     }
   }

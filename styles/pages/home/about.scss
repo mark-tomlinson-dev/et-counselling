@@ -37,23 +37,18 @@
     }
     @include media('<phone') {
       margin: 0 auto;
-
-        
       h2 {
         display: none;
       }
 
       p {
-        margin-top: 8rem;
-        font-size: 4rem;
+        margin-top: 4rem;
+        font-size: 3.6rem;
         line-height: 6rem;
         color: $color-black;
-        text-align: center;
-      
-
+    
         &:nth-child(1) {
-          font-size: 4.6rem;
-          font-weight: bold;
+          
         }
       }
     }
@@ -86,6 +81,7 @@
       width: 100%;
       display: grid;
       place-items: center;
+      display: none;
     }
 
     &-image {

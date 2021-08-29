@@ -4,6 +4,7 @@
 article.contact#contact.panel
   .wrapper.contact__grid       
     h2.contact__title=title.title
+    h2.contact__title-mobile=mobileTitle.mobileTitle
     .contact__content
       .text!=PrismicDOM.RichText.asHtml(home.data.contact_tagline)
       p.contact__phone=home.data.phone 

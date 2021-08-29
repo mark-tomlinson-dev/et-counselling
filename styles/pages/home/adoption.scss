@@ -1,5 +1,5 @@
 .adoption {
-  background-color: #000;
+  
   
   &__inner {
     display: flex;
@@ -29,17 +29,12 @@
       }
 
       p {
-        margin-top: 8rem;
-        font-size: 4rem;
+        margin-top: 4rem;
+        font-size: 3.6rem;
         line-height: 6rem;
-        color: $color-light-grey;
-        text-align: center;
+        color: $color-black;
 
         &:nth-child(1) {
-          margin-top: 0;
-          font-size: 4.6rem;
-          font-weight: bold;
-          color: $color-white;
         }
       }
     }
