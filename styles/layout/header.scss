@@ -36,9 +36,12 @@
   &__logo__link {
     @extend %title-18;
     color: $color-black;
+   
 
     @include media('<phone') {
       font-size: 3.8rem;
+      mix-blend-mode: difference; // not working!!!!
+    
     }
   }
 

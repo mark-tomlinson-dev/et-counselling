@@ -37,6 +37,7 @@
     }
     @include media('<phone') {
       margin: 0 auto;
+
       h2 {
         display: none;
       }
@@ -46,10 +47,19 @@
         font-size: 3.6rem;
         line-height: 6rem;
         color: $color-black;
+        width: 70%;
     
         &:nth-child(1) {
-          
+          font-size: 7rem;
+          line-height: 7rem;
+          width: 100%;
+          // font-weight: 500;
         }
+
+        &:nth-child(2) {
+          font-size: 5rem;
+        }
+
       }
     }
   }
