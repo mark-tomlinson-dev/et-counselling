@@ -9,8 +9,8 @@
   }
   @include media('<phone') {
     max-width: calc(100% - 10rem);
-    min-height: calc(90vh - 7.2rem);
-    display: grid;
-    place-content: center;
+    // min-height: calc(90vh - 7.2rem);
+    // display: grid;
+    // place-content: center;
    }
 }
