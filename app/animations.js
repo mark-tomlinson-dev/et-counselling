@@ -1,3 +1,43 @@
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.to(".intro__text-content-text", {
+  x: 0,
+  y: 0,
+  scrollTrigger: {
+    trigger: '.intro__text-content-text',
+    start: 'top 80%',
+    end: 'bottom 75%',
+    scrub: true,
+  }
+})
+
+gsap.to('.intro__text-content-title', {
+  opacity: 1,
+  scrollTrigger: {
+    trigger: '.intro__text-content-text',
+    start: 'top 60%',
+    end: 'bottom 60%',
+    scrub: true
+  }
+})
+
+gsap.to('.intro__text-content-text *', {
+  opacity: 1,
+  scrollTrigger: {
+    trigger: '.intro__text-content-text',
+    start: 'top 40%',
+    end: 'bottom 65%',
+    scrub: true
+  }
+})
+
+
+
+
+
+
 // let imageItems = [...document.querySelectorAll('.intro__media')]
 // console.log(imageItems)
 
@@ -6,11 +46,13 @@
 
 // let titleItems = [...document.querySelectorAll('.intro__title')]
 
+// let introTitle = document.querySelector('.intro__text-content-text')
+// let introText = document.querySelector('.intro')
 
 
-// // When the element is 150px in the viewport, trigger the intersection obs callback
+// When the element is 150px in the viewport, trigger the intersection obs callback
 // let options = {
-//   rootMargin: '-80px'
+//   rootMargin: '-200px'
 // }
 
 // let setItemActive = (entries => {
@@ -22,6 +64,9 @@
 // })
 
 // let observer = new IntersectionObserver(setItemActive, options);
+
+// observer.observe(introTitle)
+
 
 // imageItems.forEach((item, idx) => {
 //   observer.observe(item, idx)

@@ -2,7 +2,7 @@ article.intro.panel
   .wrapper
     .intro__inner
       .intro__text-content
-        h2=home.data.intro_title
+        h2.intro__text-content-title=home.data.intro_title
           span.period .
         .intro__text-content-text
           p!=PrismicDOM.RichText.asHtml(home.data.intro_text)
