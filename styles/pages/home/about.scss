@@ -1,21 +1,11 @@
-.about__mobile__wrapper {
-  display: none;
-  
-  @include media('<phone') {
-    max-width: calc(100% - 6rem);
-    min-height: calc(100vh - 7.2rem);
-    display: grid;
-    place-content: center;
-    background-color: $color-white;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-   }
-}
+
 
 .about {
   @include media('<phone') {
     background-color: $color-white;
+    min-height: calc(84vh - 7.2rem);
+    display: grid;
+    place-content: center;
   }
   &__inner {
     display: flex;
@@ -27,6 +17,39 @@
     @include media('<phone') {
       flex-direction: column;
     }
+  }
+
+  .mobile-image-montage {
+    @include media('>phone') {
+      display: none;
+    }
+    position: relative;
+    min-height: 50vh;
+
+    .montage-about-image {
+      position: absolute;
+      width: 25rem;
+      top: 30rem;
+      left: 15rem;
+    }
+
+    .montage-intro-image {
+      object-fit: cover;
+      position: absolute;
+      width: 30rem;
+      height: 20rem;
+      top: 20rem;
+    }
+
+    .montage-adoption-image {
+      object-fit: cover;
+      position: absolute;
+      width: 20rem;
+      height: 30rem;
+      top: 10rem;
+      right: 0;
+    }
+
   }
 
   &__text-content {
@@ -53,7 +76,6 @@
           font-size: 7rem;
           line-height: 7rem;
           width: 100%;
-          // font-weight: 500;
         }
 
         &:nth-child(2) {
