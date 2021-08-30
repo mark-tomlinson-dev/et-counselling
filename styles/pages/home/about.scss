@@ -24,7 +24,8 @@
       display: none;
     }
     position: relative;
-    min-height: 50vh;
+    position: relative;
+    min-height: clamp(85rem, 45vh, 100rem);
 
     .montage-about-image {
       position: absolute;

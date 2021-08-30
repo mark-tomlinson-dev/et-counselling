@@ -1,6 +1,7 @@
 .contact {
   @include media('<phone') {
     order: 5;
+    background: #000;
   }
 
   &__grid {
@@ -44,14 +45,7 @@
     }
   }
 
-  &__title-mobile {
-    display: none;
-    @include media('<phone') {
-      color: $color-black;
-    }
-  }
 
-  
   &__content {
     grid-column: 1/2;
     grid-row: 2/3;
@@ -64,33 +58,30 @@
 
     @include media('<phone') {
       display: block;
+      text-align: center;
+      padding-top: 10rem;
+      padding-bottom: 12rem;
       p {
-        margin-top: 4rem;
+        margin-top: 2rem;
         font-size: 3.6rem;
-        line-height: 6rem;
+        line-height: 1;
+        color: $color-white;
       }
     }
+
+    &__title {
+      color: $color-white;
+      font-size: 3.2rem;
+      text-transform: uppercase;
+      font-weight: 600;
+      margin-bottom: 3rem;
+    }  
+
+
   }
   
  
-  
-  &__phone {
-    @extend %text-24;
-    font-weight: 600;
 
-    @include media('<phone') {
-      display: none;
-    }
-  }
-  
-  &__email {
-    @extend %text-24;
-    font-weight: 600;
-
-    @include media('<phone') {
-      display: none;
-    }
-  }
   
   &__media {
     grid-column: 2/4;

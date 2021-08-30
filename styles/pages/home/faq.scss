@@ -24,10 +24,8 @@ details {
      }
     @include media('<phone') {
       max-width: calc(100% - 6rem);
-      margin: 30rem auto 0;
-      padding: 0;
-      min-height: 100vh;
-    
+      margin: 5rem auto 10rem;
+      padding: 0;    
      }
   }
   &__title {
@@ -81,7 +79,7 @@ details {
   &__answer {
     @extend %text-24;
     @include media('<phone') {
-      color: $color-light-grey;
+      color: $color-grey;
     }
   }
 }

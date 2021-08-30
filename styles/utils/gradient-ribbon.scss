@@ -48,7 +48,6 @@
     left: 11rem;
   }
   @include media('<phone') {
-    // display: none;
     transform: rotate(-90deg);
     height: 11.6rem;
     width: 35.7rem;

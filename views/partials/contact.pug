@@ -1,13 +1,7 @@
-- var title = {title: home.data.contact_title}
-- var mobileTitle = {mobileTitle: home.data.contact_title_mobile}
-
 article.contact#contact.panel
   .wrapper.contact__grid       
-    h2.contact__title=title.title
-    h2.contact__title-mobile=mobileTitle.mobileTitle
     .contact__content
+      h2.contact__content__title=home.data.contact_title
       .text!=PrismicDOM.RichText.asHtml(home.data.contact_tagline)
-      p.contact__phone=home.data.phone 
-      p.contact__email=home.data.email
     figure.contact__media 
       img.contact__media__image(src=home.data.contact_image.url) 
