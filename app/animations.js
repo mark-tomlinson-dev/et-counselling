@@ -34,6 +34,34 @@ gsap.to('.intro__text-content-text *', {
 })
 
 
+const timeline = gsap.timeline({scrollTrigger: {
+  trigger: ".about",
+  start: "top 70%",
+  end: "+=400",
+  toggleActions: "restart none none reverse",
+  scrub: 0.5,
+  ease: "sine.out",
+}})
+
+.to(".montage-adoption-image", {
+  y: -30,
+  opacity: 1
+})
+.to(".montage-intro-image", {
+  y: -60,
+  opacity: 1
+}, 0)
+.to(".montage-about-image", {
+  y: -120,
+  opacity: 1
+}, 0)
+.to(".montage__orange__ribbon", {
+  opacity: 1
+}, 0.2)
+
+
+
+
 
 
 
