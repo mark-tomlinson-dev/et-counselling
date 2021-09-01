@@ -17,6 +17,10 @@
     align-self: center;
     margin-right: 8rem;
     width: fit-content;
+
+    h2 {
+      opacity: 1;
+    }
     @include media('<tablet') {
       margin-right: 3rem;
     }
@@ -31,7 +35,7 @@
         color: $color-black;
         text-align: center;
         font-weight: 600;
-        margin-bottom: 8rem;
+        margin-bottom: 5rem;
         opacity: 0;
       }
 

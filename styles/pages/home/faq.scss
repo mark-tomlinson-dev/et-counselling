@@ -34,6 +34,10 @@ details {
     margin-bottom: 4rem;
     @include media('<phone') {
       color: $color-black;
+      font-size: 5rem;
+      color: $color-black;
+      font-weight: 600;
+      margin-bottom: 5rem;
     }
   }
   &__question {
