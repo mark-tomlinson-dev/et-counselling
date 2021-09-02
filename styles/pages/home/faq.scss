@@ -11,6 +11,7 @@ details {
   @include media('<phone') {
     order: 6;
   }
+
   &__wrapper {
     position: relative;
     margin: -6rem auto 10rem auto;
@@ -21,13 +22,14 @@ details {
       padding-left: 10rem;
       padding-right: 10rem;
       min-width: 90vw;
-     }
+    }
     @include media('<phone') {
       max-width: calc(100% - 6rem);
       margin: 5rem auto 10rem;
       padding: 0;    
-     }
+    }
   }
+
   &__title {
     @extend %title-40;
     padding-top: 4rem;
@@ -43,6 +45,7 @@ details {
       margin-bottom: 5rem;
     }
   }
+
   &__question {
     @extend %title-24;
     border-top: solid 1px $color-black;
@@ -78,15 +81,16 @@ details {
       padding-bottom: 5rem;
     }
   }
+
   &__answer__content {
     padding-bottom: 2.4rem;
     border-top: none;
-  
   }
+  
   &__answer {
     @extend %text-24;
     @include media('<phone') {
-      color: $color-grey;
+      // color: $color-grey;
     }
   }
 }
