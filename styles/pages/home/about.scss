@@ -95,8 +95,9 @@
 
   
   &__media {
-    width: 100%;
+    width: 223rem;
     margin-left: 10rem;
+    z-index: 1;
     @include media('<tablet') {
      margin-left: 0;
      align-self: center;
@@ -111,25 +112,5 @@
         display: none;
       }
     }
-  }
-
-  &__media__mobile {
-    display: none;
-    @include media('<phone') {
-      margin-top: 5rem;  
-      width: 100%;
-      display: grid;
-      place-items: center;
-      display: none;
-    }
-
-    &-image {
-      object-fit: cover;
-      height: 20rem;
-      filter: grayscale(1);
-      border: solid 3px white;
-      border-radius: 50px;
-    }
-
   }
 }

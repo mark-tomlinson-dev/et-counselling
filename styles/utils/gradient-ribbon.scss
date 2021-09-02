@@ -5,6 +5,7 @@
   height: 12.7rem;
   width: 74.8rem;
   background: $gradient-300;
+  z-index: 3;
   @include media('<tablet') {
     top: 38.4rem;
     right: 15.8rem;
@@ -24,7 +25,7 @@
   left: -10rem;
   height: 12.3rem;
   width: 52.8rem;
-  background: $gradient-100;
+  background: $gradient-100; 
   @include media('<tablet') {
     // top: 39rem;
     // left: -5rem;
@@ -41,11 +42,13 @@
   top: 47rem;
   left: 33rem;
   background-color: $color-orange;
+  z-index: 2;
   @include media('<tablet') {
-    height: 2.6rem;
-    width: 19.7rem;
-    top: 41.8rem;
-    left: 11rem;
+    // height: 2.6rem;
+    // width: 19.7rem;
+    // top: 41.8rem;
+    // left: 11rem;
+    display: none;
   }
   @include media('<phone') {
     transform: rotate(-90deg);
@@ -77,12 +80,6 @@
   width: 83.5rem;
   background: $gradient-200;
   @include media('<tablet') {
-    top: 40.4rem;
-    left: 29rem;
-    height: 8rem;
-    width: 49.8rem;
-  }
-  @include media('<phone') {
     display: none;
   }
 }
@@ -90,8 +87,7 @@
 .faq__gradient__ribbon {
   position: absolute;
   top: 20rem;
-  right: -35rem;
-  z-index: -1;
+  right: -48rem;
   height: 9rem;
   width: 36rem;
   background: $gradient-200;
@@ -105,7 +101,7 @@
   &:nth-of-type(2) {
     position: absolute;
     top: 50rem;
-    left: -10rem;
+    left: -34rem;
     height: 12.5rem;
     width: 35rem;
     background: $gradient-100;
@@ -113,7 +109,7 @@
 
   &:nth-of-type(3) {
     position: absolute;
-    top: 74rem;
+    top: 82rem;
     height: 15rem;
     width: 100rem;
     background: $gradient-200;

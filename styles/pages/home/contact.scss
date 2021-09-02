@@ -49,10 +49,10 @@
       padding-top: 13rem;
       @extend %title-60;
       margin-bottom: 5.5rem;
+      z-index: 1;
   
       @include media('<tablet') {
         grid-column: 1/4;
-        padding-top: 0rem;
       }
     
       &::after {

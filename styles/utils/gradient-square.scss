@@ -4,8 +4,8 @@
   left: 58rem;
   height: 14.8rem;
   width: 14.6rem;
-  z-index: -1;
   background: $gradient-100;
+  z-index: 0;
   @include media('<tablet') {
     top: -2.5rem;
     left: 43rem;
@@ -17,15 +17,14 @@
   }
 }
 
-.adoption__gradient__square {
-  position: absolute;
-  top: -2rem;
-  left: 58rem;
-  height: 14.8rem;
-  width: 14.6rem;
-  z-index: -1;
-  background: $gradient-100;
-  @include media('<tablet') {
-    display: none;
-  }
-}
+// .adoption__gradient__square {
+//   position: absolute;
+//   top: -2rem;
+//   left: 58rem;
+//   height: 14.8rem;
+//   width: 14.6rem;
+//   background: $gradient-100;
+//   @include media('<tablet') {
+//     display: none;
+//   }
+// }
