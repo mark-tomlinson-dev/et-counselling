@@ -1,6 +1,6 @@
 .hero {
   @include media('<phone') {
-    min-height: calc(84vh - 7.2rem);
+    min-height: calc(93vh - 7.2rem);
     display: grid;
     place-content: center;
   }
@@ -12,9 +12,10 @@
     line-height: 6rem;
     @include media('<phone') {
       margin-top: -25rem;
-      line-height: 8rem;
+      line-height: 9rem;
       font-size: 8rem;
       font-weight: 500;
+      letter-spacing: -0.08rem;
     }
   }
 
@@ -38,7 +39,6 @@
       font-size: 7rem;
       color: $color-light-grey;
       display: none;
-      // margin-right: 10rem;
 
       &::before {
         content: "";

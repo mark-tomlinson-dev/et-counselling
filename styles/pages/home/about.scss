@@ -17,9 +17,10 @@
 
   .mobile-image-montage {
     display: none;
-    @include media('>phone') {
+    @include media('<phone') {
+      display: initial;
       position: relative;
-      min-height: clamp(60rem, 45vh, 100rem);
+      min-height: clamp(80rem, 65rem, 100rem);
   
       .montage-about-image {
         position: absolute;

@@ -5,7 +5,7 @@ gsap.registerPlugin(ScrollTrigger);
 ScrollTrigger.saveStyles(".intro__text-content-title, .intro__text-content-text *, .text, .title")
 ScrollTrigger.matchMedia({
 
-  "(max-width: 768px)": function() {
+  "(max-width: 767px)": function() {
     gsap.to(".intro__text-content-text", {
       x: 0,
       y: 0,
