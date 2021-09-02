@@ -1,5 +1,6 @@
 .button {
-  @extend %title-14;
+  font-family: $font-brandon;
+  font-size: 1.4rem;
   display: flex;
   border-radius: 2px;
   text-transform: uppercase;
@@ -11,9 +12,22 @@
   letter-spacing: 0.10rem;
   align-items: center;
   max-width: 28rem;
+
+  @include media('<phone') {
+    background-color: transparent;
+    color: $color-black;
+    font-size: 2.4rem;
+    padding: 0;
+    max-width: 100%;
+    text-decoration-line: underline;
+    display: none;
+  }
   
   &:hover {
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    @include media('<phone') {
+     box-shadow: none;
+    }
   }
 
   &:hover .button__icon--arrow {
@@ -22,6 +36,9 @@
 
   &:active {
     background-color: $color-grey;
+    @include media('<phone') {
+      background-color: transparent;
+    }
   }
 }
 
@@ -30,4 +47,8 @@
   width: 2.8rem;
   margin-left: 1rem;
   transition: transform 0.2s ease-in;
+
+  @include media('<phone') {
+   fill: $color-black;
+  }
 }

@@ -1,0 +1,27 @@
+.splash-title {
+  color: white;
+  opacity: 1;
+  font-size: 3.6rem;
+}
+
+.loading {
+  display: grid;
+  place-content: center;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  opacity: 0;
+  visibility: hidden;
+}

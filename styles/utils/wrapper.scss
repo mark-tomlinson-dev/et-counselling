@@ -4,8 +4,13 @@
   position: relative;
   max-width: $content-width;
   
-  @include media('<phone') {
-    flex-direction: column;
-    margin: 8rem auto 0 auto;
+  @include media('<tablet') {
+    max-width: 90rem;
   }
+  @include media('<phone') {
+    max-width: calc(100% - 10rem);
+    // min-height: calc(90vh - 7.2rem);
+    // display: grid;
+    // place-content: center;
+   }
 }

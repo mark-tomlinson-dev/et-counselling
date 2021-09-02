@@ -1,18 +1,96 @@
-.hero__title {
-  @extend %title-60;
-  margin-top: 12rem;
-  max-width: 24ch;
-  line-height: 6rem;
-
-  @include media('<tablet') {
-    font-size: 7rem;
+.hero {
+  position: relative;
+  @include media('<phone') {
+    min-height: calc(93vh - 7.2rem);
+    display: grid;
+    place-content: center;
   }
 
-  @include media('<phone') {
-    margin-top: 0rem;
-    line-height: 1;
-   }
+  .hero__title {
+    @extend %title-60;
+    margin-top: 12rem;
+    max-width: 24ch;
+    line-height: 6rem;
+    @include media('<phone') {
+      margin-top: -40rem;
+      line-height: 8.2rem;
+      font-size: 8rem;
+      font-weight: 500;
+      letter-spacing: -0.08rem;
+    }
+  }
+  
+  .scroll {
+    display: none;
+    @include media('<phone') {
+      display: unset;
+      position: absolute;
+      left: 0%;
+      margin-bottom: 3rem;
+      font-size: 2rem;
+      text-transform: uppercase;
+      margin-top: 11rem;
+      color: $color-black;
+
+      span {
+        letter-spacing: 0.75rem;
+      }
+      
+      &:after {
+        position: absolute;
+        content: "";
+        width: 1px;
+        height: 30vh;
+        background: $color-grey;
+        left: 50%;
+        margin-top: 6rem;
+        opacity: 0.6;
+      }
+    }
+  }
+  
+  .hero__title__mobile {
+    display: none;
+    @include media('<phone') {
+      display: initial;
+      font-size: 14rem;
+      font-weight: 500;
+      line-height: 12rem;
+      display: none;
+    }
+  }
+
+  .hero__title__mobile-secondary {
+    display: none;
+    position: relative;
+    @include media('<phone') {
+      display: initial;
+      place-self: end;
+      font-size: 7rem;
+      color: $color-light-grey;
+      display: none;
+
+      &::before {
+        content: "";
+        background-color: $color-light-grey;
+        position: absolute;
+        width: 12rem;
+        height: 2px;
+        top: 4rem;
+        left: -12.5rem;
+       
+      }
+    }
+  }
+
+
+
+
+
+
+
 }
+
 
 
 

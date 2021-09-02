@@ -2,4 +2,8 @@
 .panel {
   margin: $spacing-medium 0;
   padding: $spacing-medium 0;
+  @include media('<phone') {
+    margin: 0 0 5rem 0;
+    padding: 0;
+  }
 }

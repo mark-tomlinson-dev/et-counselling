@@ -2,9 +2,29 @@
   position: sticky;
   top: 0;
   width: 100%;
-  z-index: 1;
+  z-index: 5;
   background-color: $color-white-transparent;
   backdrop-filter: blur(8px);
+
+  @include media('<phone') {
+    backdrop-filter: initial;
+    position:unset;
+  }
+
+  &__wrapper {
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+      max-width: $content-width;
+      
+      @include media('<tablet') {
+        max-width: 90rem;
+      }
+      @include media('<phone') {
+        max-width: calc(100% - 10rem);
+      }
+  }
+  
 
   &__inner {
     display: flex;
@@ -16,6 +36,11 @@
   &__logo__link {
     @extend %title-18;
     color: $color-black;
+   
+
+    @include media('<phone') {
+      font-size: 3rem;
+    }
   }
 
   .navigation__list {
@@ -24,6 +49,9 @@
     align-items: center;
     gap: 0 clamp(4rem,1rem + .47vw,1.33rem);
     margin: 0;
+    @include media('<phone') {
+      display: none;
+     }
   
     &__link {
       @extend %title-18;

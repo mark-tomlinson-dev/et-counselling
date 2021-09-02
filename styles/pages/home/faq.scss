@@ -8,6 +8,10 @@ details {
 }
 
 .faq {
+  @include media('<phone') {
+    order: 6;
+  }
+
   &__wrapper {
     position: relative;
     margin: -6rem auto 10rem auto;
@@ -18,16 +22,30 @@ details {
       padding-left: 10rem;
       padding-right: 10rem;
       min-width: 90vw;
-     }
+    }
     @include media('<phone') {
-      padding: 0rem;
-     }
+      max-width: calc(100% - 6rem);
+      margin: 5rem auto 10rem;
+      padding: 0;    
+    }
   }
+
   &__title {
     @extend %title-40;
     padding-top: 4rem;
     margin-bottom: 4rem;
+    @include media('<tablet') {
+      font-size: 3.6rem;
+    }
+    @include media('<phone') {
+      color: $color-black;
+      font-size: 5rem;
+      color: $color-black;
+      font-weight: 600;
+      margin-bottom: 5rem;
+    }
   }
+
   &__question {
     @extend %title-24;
     border-top: solid 1px $color-black;
@@ -38,7 +56,7 @@ details {
     align-items: center;
     justify-content: space-between;
     &:hover {
-      color: $color-grey;
+      color: $color-black;
       transition: .2s ease-in-out;
     }  
     &__icon--down-chevron {
@@ -47,18 +65,32 @@ details {
       margin-right: 3rem;
       transition: transform .3s ease;
       transform-origin: 65%;
+      @include media('<phone') {
+        fill: $color-black;
+      }
       &.active {
         transform: rotate(180deg);
         transition: transform .3s ease;
         transform-origin: 65%;
       }
     }
+    @include media('<phone') {
+      color: $color-black;
+      font-size: 3rem;
+      padding-top: 5rem;
+      padding-bottom: 5rem;
+    }
   }
+
   &__answer__content {
     padding-bottom: 2.4rem;
     border-top: none;
   }
+  
   &__answer {
     @extend %text-24;
+    @include media('<phone') {
+      // color: $color-grey;
+    }
   }
 }

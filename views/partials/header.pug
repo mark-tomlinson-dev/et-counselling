@@ -1,17 +1,19 @@
 header.header
-  .wrapper 
+  .header__wrapper 
     .header__inner
       .header__logo
-        a.header__logo__link(href="#") Elizabeth Tomlinson
+        a.header__logo__link(href="#" aria-label="Navigate to the top of the home page") Elizabeth Tomlinson
+          //- span: i C
+          span.period .        
       .header__navigation 
         nav#primary-navigation 
           ul.navigation__list
 
             li.navigation__list__item 
-              a.navigation__list__link(href="#about") About Me
+              a.navigation__list__link(href="#about" aria-label="Navigate to the about section") About Me
 
             li.navigation__list__item
-              a.navigation__list__link(href="#faq") FAQ
+              a.navigation__list__link(href="#faq" aria-label="Navigate to the frequently asked questions section") FAQ
               
             li.navigation__list__item
-              a.navigation__list__link(href="#contact") Contact
+              a.navigation__list__link(href="#contact" aria-label="Navigate to the contact section") Contact

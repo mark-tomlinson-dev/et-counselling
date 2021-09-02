@@ -1,0 +1,6 @@
+.underline {
+  
+  @include media('<phone') {
+    text-decoration: underline;
+  }
+}

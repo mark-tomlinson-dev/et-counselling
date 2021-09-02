@@ -6,16 +6,8 @@ export default class Accordion {
     this.summary = el.querySelector('summary');
     // Store the <div class="content"> element
     this.content = el.querySelector('.faq__answer__content');
-
     this.question = el.querySelector('.faq__question')
-
-    // this.answer = el.querySelector('.faq__answer');
-
     this.icon = el.querySelector('.faq__question__icon--down-chevron')
-
-  
-
-
     // Store the animation object (so we can cancel it if needed)
     this.animation = null;
     // Store if the element is closing
@@ -31,11 +23,7 @@ export default class Accordion {
     e.preventDefault();
     // Add an overflow on the <details> to avoid content overflowing
     this.el.style.overflow = 'hidden';
-
     this.icon.classList.toggle('active');
-
-    // this.question.classList.toggle('active');
-
     // Check if the element is being closed or is already closed
     if (this.isClosing || !this.el.open) {
       this.open();
@@ -48,18 +36,15 @@ export default class Accordion {
   shrink() {
     // Set the element as "being closed"
     this.isClosing = true;
-    
     // Store the current height of the element
     const startHeight = `${this.el.offsetHeight}px`;
     // Calculate the height of the summary
     const endHeight = `${this.summary.offsetHeight}px`;
-    
     // If there is already an animation running
     if (this.animation) {
       // Cancel the current animation
       this.animation.cancel();
     }
-    
     // Start a WAAPI animation
     this.animation = this.el.animate({
       // Set the keyframes from the startHeight to endHeight
@@ -68,7 +53,6 @@ export default class Accordion {
       duration: 400,
       easing: 'ease-out'
     });
-    
     // When the animation is complete, call onAnimationFinish()
     this.animation.onfinish = () => this.onAnimationFinish(false);
     // If the animation is cancelled, isClosing variable is set to false

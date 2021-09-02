@@ -1,9 +1,9 @@
 article.contact#contact.panel
   .wrapper.contact__grid       
-    h2.contact__title=home.data.contact_title
+    h2.contact__content__title=home.data.contact_title
+
     .contact__content
-      p.contact__tagline=home.data.contact_tagline
-      p.contact__phone=home.data.phone 
-      p.contact__email=home.data.email
+      .contact__content__title-mobile=home.data.contact_title_mobile
+      .text!=PrismicDOM.RichText.asHtml(home.data.contact_tagline)
     figure.contact__media 
       img.contact__media__image(src=home.data.contact_image.url) 

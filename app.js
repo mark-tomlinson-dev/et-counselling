@@ -5,7 +5,6 @@ const bodyParser = require('body-parser')
 const methodOverride = require('method-override')
 const logger = require('morgan')
 
-
 const app = express()
 const path = require('path')
 const port = 3000
@@ -35,15 +34,11 @@ const handleLinkResolver = () => {
 
 
 app.use((req, res, next) => {
-
   res.locals.link = handleLinkResolver
-
   res.locals.ctx = {
     endpoint: process.env.PRISMIC_ENDPOINT
   }
-
   res.locals.PrismicDOM = PrismicDOM
-  
   next()
 })
 
@@ -57,7 +52,8 @@ app.get('/', async (req, res) => {
   const home = await api.getSingle('home')
   const meta = await api.getSingle('meta')
 
-  console.log(home.data.body)
+  // console.log(home.data.contact_tagline)
+  // console.log(meta.data)
 
   res.render('base', {
     home,

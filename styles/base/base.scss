@@ -10,18 +10,13 @@ html {
     font-size: calc(100vw / 750 * 10);
   }
 }
-
+html, 
 body {
   font-family: $font-brandon;
   background-color: $color-white;
 }
 
 #main-content {
-  @include media('<tablet') {
-    padding: 4rem;
-   }
-
-   @include media('<phone') {
-    padding: 0rem;
-  }
+  display: flex;
+  flex-direction: column;
 }

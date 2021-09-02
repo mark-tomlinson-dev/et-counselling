@@ -5,7 +5,19 @@
   height: 12.7rem;
   width: 74.8rem;
   background: $gradient-300;
+  z-index: 3;
+  @include media('<tablet') {
+    top: 38.4rem;
+    right: 15.8rem;
+    height: 8rem;
+    width: 49.8rem;
+  }
+  @include media('<phone') {
+    display: none;
+  }
 }
+
+
 
 .about__gradient__ribbon {
   position: absolute;
@@ -13,7 +25,10 @@
   left: -10rem;
   height: 12.3rem;
   width: 52.8rem;
-  background: $gradient-100;
+  background: $gradient-100; 
+  @include media('<tablet') {
+    display: none;
+  }
 }
 
 .about__orange__ribbon {
@@ -23,6 +38,33 @@
   top: 47rem;
   left: 33rem;
   background-color: $color-orange;
+  z-index: 2;
+  @include media('<tablet') {
+    height: 2.6rem;
+    width: 19.7rem;
+    top: 37rem;
+    left: 11rem;
+  }
+  @include media('<phone') {
+    transform: rotate(-90deg);
+    height: 11.6rem;
+    width: 35.7rem;
+    top: 148rem;
+    left: 47rem;
+  }
+}
+
+.montage__orange__ribbon {
+  position: absolute;
+  height: 2.6rem;
+  width: 19.7rem;
+  top: 55rem;
+  left: 28rem;
+  background-color: $color-orange;
+  opacity: 0;
+  @include media('>phone') {
+    display: none;
+  }
 }
 
 .adoption__gradient__ribbon {
@@ -32,32 +74,29 @@
   height: 12.3rem;
   width: 83.5rem;
   background: $gradient-200;
-
   @include media('<tablet') {
-    top: 51rem;
-    left: 16rem;
-    height: 11.3rem;
-    width: 70.5rem;
-  }  
+    display: none;
+  }
 }
 
 .faq__gradient__ribbon {
   position: absolute;
   top: 20rem;
-  right: -35rem;
-  z-index: -1;
+  right: -48rem;
   height: 9rem;
   width: 36rem;
   background: $gradient-200;
-
   @include media('<tablet') {
     display: none;
-   }
+  }
+  @include media('<phone') {
+    display: none;
+  }
 
   &:nth-of-type(2) {
     position: absolute;
     top: 50rem;
-    left: -10rem;
+    left: -34rem;
     height: 12.5rem;
     width: 35rem;
     background: $gradient-100;
@@ -65,9 +104,12 @@
 
   &:nth-of-type(3) {
     position: absolute;
-    top: 74rem;
+    top: 82rem;
     height: 15rem;
     width: 100rem;
     background: $gradient-200;
   }
 }
+
+
+
