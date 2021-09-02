@@ -1,3 +1,5 @@
 .period {
-  color: $color-orange-full;
+  @include media('<phone') {
+    color: $color-orange-full;
+  }
 }

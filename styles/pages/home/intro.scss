@@ -18,6 +18,15 @@
     margin-right: 8rem;
     width: fit-content;
 
+    // Remove prismic styles on desktop
+    em {
+      font-style: normal;
+    }
+
+    strong {
+      font-weight: 400;
+    }
+
     h2 {
       opacity: 1;
     }
