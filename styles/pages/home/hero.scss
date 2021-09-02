@@ -1,4 +1,5 @@
 .hero {
+  position: relative;
   @include media('<phone') {
     min-height: calc(93vh - 7.2rem);
     display: grid;
@@ -11,14 +12,43 @@
     max-width: 24ch;
     line-height: 6rem;
     @include media('<phone') {
-      margin-top: -25rem;
-      line-height: 9rem;
+      margin-top: -40rem;
+      line-height: 8.2rem;
       font-size: 8rem;
       font-weight: 500;
       letter-spacing: -0.08rem;
     }
   }
+  
+  .scroll {
+    display: none;
+    @include media('<phone') {
+      display: unset;
+      position: absolute;
+      left: 0%;
+      margin-bottom: 3rem;
+      font-size: 2rem;
+      text-transform: uppercase;
+      margin-top: 11rem;
+      color: $color-black;
 
+      span {
+        letter-spacing: 0.75rem;
+      }
+      
+      &:after {
+        position: absolute;
+        content: "";
+        width: 1px;
+        height: 30vh;
+        background: $color-grey;
+        left: 50%;
+        margin-top: 6rem;
+        opacity: 0.6;
+      }
+    }
+  }
+  
   .hero__title__mobile {
     display: none;
     @include media('<phone') {
@@ -52,6 +82,13 @@
       }
     }
   }
+
+
+
+
+
+
+
 }
 
 
