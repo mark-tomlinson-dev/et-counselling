@@ -1,11 +1,12 @@
 .adoption {
-  
+  @include media('<phone') {
+    display: none;
+  }
   
   &__inner {
     display: flex;
     @include media('<phone') {
-      display: block;
-     
+      display: block;  
     }
   }
   
@@ -20,7 +21,6 @@
     }
     @include media('<phone') {
       margin: 0;
-
       h2 {
         color: $color-white;
         text-align: center;

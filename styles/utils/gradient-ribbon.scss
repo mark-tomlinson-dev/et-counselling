@@ -27,10 +27,6 @@
   width: 52.8rem;
   background: $gradient-100; 
   @include media('<tablet') {
-    // top: 39rem;
-    // left: -5rem;
-    // height: 8rem;
-    // width: 38rem;
     display: none;
   }
 }
@@ -44,17 +40,16 @@
   background-color: $color-orange;
   z-index: 2;
   @include media('<tablet') {
-    // height: 2.6rem;
-    // width: 19.7rem;
-    // top: 41.8rem;
-    // left: 11rem;
-    display: none;
+    height: 2.6rem;
+    width: 19.7rem;
+    top: 37rem;
+    left: 11rem;
   }
   @include media('<phone') {
     transform: rotate(-90deg);
     height: 11.6rem;
     width: 35.7rem;
-    top: 160rem;
+    top: 148rem;
     left: 47rem;
   }
 }

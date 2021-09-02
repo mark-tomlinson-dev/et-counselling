@@ -6,11 +6,11 @@ article.about#about.scroll-margin.panel
         img.montage-intro-image(alt=home.data.intro_image.alt src=home.data.intro_image.url)
         img.montage-about-image(alt=home.data.about_image.alt src=home.data.about_image.url)
         .montage__orange__ribbon
-
-
       .about__text-content
         h2.title=home.data.about_title
         .text!=PrismicDOM.RichText.asHtml(home.data.about_text)
+      .about__text-mobile
+        .text!=PrismicDOM.RichText.asHtml(home.data.about_text_mobile)
       figure.about__media
         img.about__media__image(alt=home.data.about_image.alt src=home.data.about_image.url)
 
