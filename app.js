@@ -7,7 +7,7 @@ const logger = require('morgan')
 
 const app = express()
 const path = require('path')
-const port = 3000
+const PORT = process.env.PORT || 3000
 
 app.use(errorHandler())
 app.use(logger('dev'))
@@ -52,15 +52,12 @@ app.get('/', async (req, res) => {
   const home = await api.getSingle('home')
   const meta = await api.getSingle('meta')
 
-  // console.log(home.data.contact_tagline)
-  // console.log(meta.data)
-
   res.render('base', {
     home,
     meta
   })
 })
 
-app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`)
+app.listen(PORT, () => {
+  console.log(`Example app listening at http://localhost:${PORT}`)
 })
