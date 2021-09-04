@@ -48,6 +48,7 @@ details {
 
   &__question {
     @extend %title-24;
+    display: flex;
     border-top: solid 1px $color-black;
     cursor: pointer;
     padding-top: 2.8rem;
@@ -62,7 +63,6 @@ details {
       margin-right: 3rem;
       transition: transform .3s ease;
       transform-origin: 65%;
-      float: right;
       @include media('<phone') {
         fill: $color-black;
       }
