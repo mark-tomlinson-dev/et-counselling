@@ -21,6 +21,15 @@ body {
   flex-direction: column;
 }
 
+:focus {
+  outline: none;
+}
+  
+:focus-visible {
+  outline: 4px dashed darkorange;
+  outline-offset: .25rem;
+}
+
 // :focus {
 //   border-color: #66afe9;
 //   outline: 0;
