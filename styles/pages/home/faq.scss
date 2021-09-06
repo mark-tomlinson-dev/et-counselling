@@ -69,7 +69,7 @@ details {
       transition: transform .3s ease;
       transform-origin: 65%;
       @include media('<phone') {
-        display: none;
+        fill: $color-black;
       }
       &.active {
         transform: rotate(180deg);
