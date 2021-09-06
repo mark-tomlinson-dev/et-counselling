@@ -3,7 +3,6 @@ details {
     list-style: none;
   
     @include media('<phone'){
-  
     }
   }
   summary::-webkit-details-marker {
