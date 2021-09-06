@@ -52,7 +52,7 @@
   }
 
   &__text-content {
-    margin-top: 2.4rem;
+    margin-top: 1.4rem;
     margin-left: 18rem;
     @include media('<tablet') {
       margin-left: 10rem;
@@ -103,8 +103,9 @@
     }
   
     &__image {
-      object-fit: cover;
-      width: 223rem;
+      height: 100%;
+      object-fit: contain;
+      width: 168rem;
       @include media('<tablet') {
         width: 165rem;
       }

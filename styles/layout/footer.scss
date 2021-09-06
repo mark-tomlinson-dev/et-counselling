@@ -29,6 +29,9 @@
   @extend %text-16;
   color: $color-grey;
   transition: 150ms ease;
+  @include media('<phone'){
+    font-size: 2rem;
+  }
 
   &:hover {
     color: $color-black;
@@ -38,6 +41,10 @@
 .footer__copyright {
   @extend %text-16;
   color: $color-grey;
+
+  @include media('<phone'){
+    font-size: 2rem;
+  }
 }
 
 .footer__button__back-to-top {
@@ -45,6 +52,9 @@
   display: flex;
   color: $color-grey;
   cursor: pointer;
+  @include media('<phone'){
+    font-size: 2rem;
+  }
 
   &:hover {
     color: $color-black;
@@ -57,6 +67,10 @@
     height: 1.4rem;
     width: 1.4rem;
     padding: 0 1rem;
+    @include media('<phone'){
+      height: 2rem;
+      width: 2rem;
+    }
   }
 } 
 
