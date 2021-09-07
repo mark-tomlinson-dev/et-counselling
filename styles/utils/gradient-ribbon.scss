@@ -40,12 +40,10 @@
   background-color: $color-orange;
   z-index: 2;
   @include media('<tablet') {
-    height: 2.6rem;
-    width: 19.7rem;
-    top: 37rem;
-    left: 11rem;
+    display: none;
   }
   @include media('<phone') {
+    display: initial;
     transform: rotate(-90deg);
     height: 11.6rem;
     width: 35.7rem;

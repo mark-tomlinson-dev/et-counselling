@@ -1,6 +1,9 @@
 details {
   summary {
-    list-style: none
+    list-style: none;
+  
+    @include media('<phone'){
+    }
   }
   summary::-webkit-details-marker {
     display: none;
@@ -47,14 +50,13 @@ details {
   }
 
   &__question {
+    display: flex;
+    justify-content: space-between;
     @extend %title-24;
     border-top: solid 1px $color-black;
     cursor: pointer;
     padding-top: 2.8rem;
     padding-bottom: 2.8rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     &:hover {
       color: $color-black;
       transition: .2s ease-in-out;

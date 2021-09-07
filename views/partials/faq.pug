@@ -9,8 +9,9 @@ each article in home.data.body
             span.period .
           each question in article.items
             details
-              summary.faq__question=question.faq_question
-                svg.faq__question__icon--down-chevron(xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="#262626")
-                  path(d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z")
+              summary
+                .faq__question=question.faq_question
+                  svg.faq__question__icon--down-chevron(xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="#262626")
+                    path(d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z")
               .faq__answer__content
                 p.faq__answer=question.faq_answer
