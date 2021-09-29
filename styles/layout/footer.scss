@@ -16,13 +16,14 @@
 
   @include media('<phone') {
     flex-direction: column;
-    gap: 4rem;
+    min-height: 24rem;
    }
 }
 
 .footer_navigation {
-  display: flex;
-  gap: 3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  place-items: center;
 } 
 
 .footer__navigation__list__link {
