@@ -28,20 +28,20 @@
 
 .footer__navigation__list__link {
   @extend %text-16;
-  color: $color-grey;
+  color: $color-black;
   transition: 150ms ease;
   @include media('<phone'){
     font-size: 2rem;
   }
 
   &:hover {
-    color: $color-black;
+    color: $color-grey;
   }
 } 
 
 .footer__copyright {
   @extend %text-16;
-  color: $color-grey;
+  color: $color-black;
 
   @include media('<phone'){
     font-size: 2rem;
@@ -51,16 +51,16 @@
 .footer__button__back-to-top {
   @extend %text-16;
   display: flex;
-  color: $color-grey;
+  color: $color-black;
   cursor: pointer;
   @include media('<phone'){
     font-size: 2rem;
   }
 
   &:hover {
-    color: $color-black;
+    color: $color-grey;
     svg {
-      fill: $color-black;
+      fill: $color-grey;
     }
   }
 
