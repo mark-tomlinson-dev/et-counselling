@@ -15,7 +15,7 @@ app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(methodOverride())
 
-// Serve our CSS
+// serve the CSS
 app.use(express.static(path.join(__dirname, 'public')))
 
 const Prismic = require('@prismicio/client');
@@ -31,7 +31,6 @@ const initApi = (req) => {
 const handleLinkResolver = () => {
   return '/'
 }
-
 
 app.use((req, res, next) => {
   res.locals.link = handleLinkResolver

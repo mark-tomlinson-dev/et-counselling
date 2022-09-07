@@ -1,4 +1,3 @@
-// Path dependency from node.js 
 const path = require('path')
 const webpack = require('webpack')
 
@@ -8,7 +7,6 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin')
 const TerserPlugin = require('terser-webpack-plugin')
 
-// Check from the server which environment we're running
 const IS_DEVELOPMENT = process.env.NODE_ENV === 'dev'
 
 const dirApp = path.join(__dirname, 'app')
@@ -37,7 +35,6 @@ module.exports = {
     new webpack.DefinePlugin({
       IS_DEVELOPMENT
     }),
-    // Copies individual files or entire directories, which already exist, to the build directory. 
     new CopyWebpackPlugin({
       patterns: [
         {
@@ -46,7 +43,6 @@ module.exports = {
         }
       ],
     }),
-    // This plugin extracts CSS into separate files. It creates a CSS file per JS file which contains CSS. It supports On-Demand-Loading of CSS and SourceMaps
     new MiniCssExtractPlugin({
       filename: '[name].css',
       chunkFilename: '[id].css'
