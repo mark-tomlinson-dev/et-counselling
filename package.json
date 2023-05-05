@@ -6,7 +6,8 @@
   "scripts": {
     "backend:build": "node app.js",
     "backend:development": "nodemon app.js",
-    "frontend:build": "if [ \"$INSTALL_DEV_DEPENDENCIES\" = true ] ; then export NODE_ENV=development ; fi && webpack --progress --config webpack.config.build.js",
+    "frontend:build": "webpack --progress --config webpack.config.build.js",
+    "build:with-dev-deps": "NODE_ENV=development npm install && npm run frontend:build",
     "frontend:development": "webpack serve --progress --config webpack.config.development.js",
     "start": "concurrently --kill-others \"npm run backend:development\" \"npm run frontend:development\"",
     "start-prod": "node app.js"
