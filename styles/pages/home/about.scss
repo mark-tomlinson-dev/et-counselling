@@ -1,6 +1,5 @@
-
 .about {
-  @include media('<phone') {
+  @include media("<phone") {
     background-color: $color-white;
     min-height: calc(84vh - 7.2rem);
   }
@@ -8,8 +7,8 @@
   &__inner {
     display: flex;
     flex-direction: row-reverse;
-  
-    @include media('<phone') {
+
+    @include media("<phone") {
       width: 100%;
       flex-direction: column;
     }
@@ -17,19 +16,20 @@
 
   .mobile-image-montage {
     display: none;
-    @include media('<phone') {
+    @include media("<phone") {
       display: initial;
       position: relative;
       min-height: clamp(80rem, 65rem, 100rem);
-  
+
       .montage-about-image {
         position: absolute;
         width: 25rem;
         top: 50rem;
         left: 15rem;
         opacity: 0;
+        filter: grayscale(1);
       }
-  
+
       .montage-intro-image {
         object-fit: cover;
         position: absolute;
@@ -38,7 +38,7 @@
         top: 35rem;
         opacity: 0;
       }
-  
+
       .montage-adoption-image {
         object-fit: cover;
         position: absolute;
@@ -54,18 +54,17 @@
   &__text-content {
     margin-top: 1.4rem;
     margin-left: 18rem;
-    @include media('<tablet') {
+    @include media("<tablet") {
       margin-left: 10rem;
     }
-    @include media('<phone') {
+    @include media("<phone") {
       display: none;
     }
-
   }
 
   &__text-mobile {
     display: none;
-    @include media('<phone') {
+    @include media("<phone") {
       display: block;
       margin: 0 auto;
       p {
@@ -74,7 +73,7 @@
         line-height: 6rem;
         color: $color-black;
         width: 70%;
-    
+
         &:nth-child(1) {
           font-size: 6.4rem;
           line-height: 7rem;
@@ -90,31 +89,29 @@
         // }
       }
     }
-  }  
+  }
 
   &__media {
-  
     margin-left: 10rem;
     z-index: 1;
-    @include media('<tablet') {
-     margin-left: 0;
-     height: 100%;
+    @include media("<tablet") {
+      margin-left: 0;
+      height: 100%;
     }
-    @include media('<phone') {
+    @include media("<phone") {
     }
-  
+
     &__image {
       height: 100%;
       object-fit: contain;
       width: 200rem;
       filter: grayscale(1);
-      @include media('<tablet') {
+      @include media("<tablet") {
         width: 165rem;
       }
-      @include media('<phone') {
+      @include media("<phone") {
         display: none;
       }
     }
   }
 }
-
